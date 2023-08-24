@@ -15,7 +15,7 @@ export const Banner = () => {
           <img src={user} alt="" />
         </div>
         <div className={ban.div_three}>
-          <h4 style={{fontWeight:"bold"}}>Hamza Anjum</h4>
+          <h4>Hamza Anjum</h4>
           <p>UI/UX Designer </p>
           <p className={ban.para}>Creative Studio PK</p>
       </div>
@@ -27,6 +27,7 @@ export const Banner = () => {
           <h5>1.6K</h5>
           <p className={ban.follwer_para}>Followers</p>
         </div>
+        <div className={ban.horrline}></div>
         <div className={ban.h5div}>
           <h5>900</h5>
           <p className={ban.follwer_para}>Following</p>

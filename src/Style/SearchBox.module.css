@@ -164,6 +164,9 @@ flex-shrink: 0;
 }
 
 
+.mssgBar{
+  display: none;
+}
 
 /* tabled media query  */
 @media screen and (max-width: 820px) {
@@ -182,7 +185,7 @@ flex-shrink: 0;
 /* mobile media query */
 @media screen and (max-width: 480px) {
   .continer_seacrh_box {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -216,6 +219,7 @@ flex-shrink: 0;
                   /* box-chart-1 */
 
 .chart_div1{
+ 
   width:150px;
   height:68px;
   border:1px solid #CACACA;;
@@ -227,6 +231,7 @@ flex-shrink: 0;
   }
   
 .erudd{
+margin-top: 2px;
   color: #739390;
 font-family: Gilroy;
 font-size: 10px;
@@ -236,24 +241,21 @@ line-height: 20px;
 }
 .numberpara{
   color: #223231;
-font-family: Gilroy;
+font-family: gilroy;
 font-size: 10px;
-font-style: normal;
-font-weight: 600;
-line-height: 20px; /* 142.857% */
+margin-top: -4px;
 }
 .redpara{
   color: #DE5B5B;
-font-family: Gilroy;
-font-size: 10px;
-font-style: normal;
-font-weight: 500;
-line-height: 16px; 
+font-family:gilroy-light;
+font-size: 8px;
+margin-top: -4px;
+
 }
 
 .chart_inner{
   /* border:2px solid purple; */
-  width:100%;
+  width:170px;
   display: flex;
  align-items: center;
  justify-content: center;
@@ -263,5 +265,16 @@ line-height: 16px;
   width: 32px;
 height: 20px;
 flex-shrink: 0;
+}
+
+/* .errdd_para{
+  border:2px solid red;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+                /* mssgbar */
+.mssgBar{
+  display: block;
 }
 }

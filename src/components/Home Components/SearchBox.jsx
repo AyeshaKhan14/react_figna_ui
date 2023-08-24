@@ -2,16 +2,20 @@ import React from 'react'
 import searchStyle from "../../Style/SearchBox.module.css"
 import {AiOutlineSearch} from "react-icons/ai"
 import {MdNotificationsNone} from "react-icons/md"
-import {BiUserCircle} from "react-icons/bi"
-import thunder from "../../assets/thunder.jpg"
 import user from "../../assets/user.jpg"
+
 import {
  Box,Text,Image
 } from '@chakra-ui/react'
 import chartgreen from "../../assets/Chart.png"
-import chartred from "../../assets/redchart.png"
+import {
+ useDisclosure
+} from '@chakra-ui/react'
+import { Drawers } from './Drawer'
 
 export const SearchBox = () => {
+
+
   return (
     <>
            {/* sesrch section */}
@@ -26,6 +30,10 @@ export const SearchBox = () => {
             <div className={searchStyle.notification_div}><span ><MdNotificationsNone className={searchStyle.notif_icons}/></span></div>
             <div  className={searchStyle.single_line_div}></div>
             <div className={searchStyle.userss_icons}><img src={user} alt="user" /></div>
+            <div className={searchStyle.mssgBar}>
+             
+               <Drawers/>
+               </div>
         </div>
         </div>
       </div>

@@ -9,7 +9,7 @@
   background: var(--ui-design-white, #FFF);
   /* Drop Shadow */
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.05);
-    border:2px solid red;
+    /* border:2px solid red; */
   }
   .div_one {
     width: 292px;
@@ -54,10 +54,10 @@
   }
   .div_three > h4 {
     color: var(--ui-design-text-primary-text, #0D1B1D);
-  font-family: Gilroy;
+  font-family: gilroy light;
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 19px; 
   }
   .div_three > p {
@@ -83,9 +83,9 @@
   }
   
   .h5div{
-    width:51px;
-    height:41px;
-    border:1px solid green;
+    /* width:51px;
+    height:41px; */
+    /* border:1px solid green; */
     display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -93,35 +93,52 @@
   }
   .h5div>h5{
     color: #0B1E1C;
-  /* font-family: Gilroy; */
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+    font-family: gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
   
   .followrs_div {
     /* border: 2px solid black; */
-    height: 72px;
     display: flex;
+    justify-content:space-around ;
+    width: 292px;
   }
   
   .follwer_para{
     color: var(--ui-design-text-primary-text, #0D1B1D);
-  /* font-family: Gilroy; */
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px; /* 133.333% */
+    font-family: gilroy;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; 
   }
+  
+.horrline{
+  border:1px solid silver;
+  height:65px;
+  margin-top: -12px;
+}
+
 
   @media screen and (max-width: 480px){
     .user_profile_cont {
       width: 65%;
       margin: auto;
       /* border:none; */
-      border:3px solid purple;
-      /* margin-top: 150%; */
+      /* border:3px solid purple; */
+    
+    }
+    .followrs_div {
+      /* border: 2px solid black; */
+      width: 202px;
+    }
+    .horizental_line{
+      width: 232px;
+    height: 0.5px;
+    border:1px solid #D1D1D1;
     }
   }
  

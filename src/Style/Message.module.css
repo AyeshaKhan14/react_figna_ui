@@ -1,205 +1,297 @@
-                                 /* message section css */
-                                 .menuIcondiv {
-                                  display: flex;
-                                  justify-content: space-between;
-                                  /* border: 2px solid blue; */
-                                  padding: 10px 20px;
-                                  width: 292px;
-                                  /* width: 20%; */
-                                  border-radius: 5px;
-                                }
+/* message section css */
+.menuIcondiv {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid blue; */
+  padding: 10px 20px;
+  width: 292px;
+  /* width: 20%; */
+  border-radius: 5px;
+  align-items: center;
+ 
+}
 
-                                .scrollableDiv {
-                                  max-height: 460px;
-                                  overflow: auto;
-                                }
+.scrollableDiv {
+  max-height: 460px;
+  overflow: auto;
+}
 
-                                .innericon {
-                                  display: flex;
-                                  /* border: 2px solid red; */
-                                  justify-content: space-between;
-                                  width: 100%;
-                                  font-size: 20px;
-                                }
+.innericon {
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: space-between;
+  width: 100%;
+  font-size: 20px;
+  align-items: center;
 
-                                .menuIcondiv_div {
-                                  /* border: 2px solid yellow; */
-                                  width: 292px;
-                                  /* height: 837px; */
-                                  flex-shrink: 0;
-                                  border-radius: 5px;
-                                }
+}
 
-                                .innericon_div {
-                                  border: 1px solid #D1D1D1;
-                                  display: flex;
-                                  width: 100%;
-                                  justify-content: space-between;
-                                  align-items: center;
-                                  border-left: none;
-                                  border-top: none;
-                                  border-right: none;
-                                  padding: 5px;
-                                  
-                                }
+.menuIcondiv_div {
+  /* border: 2px solid yellow; */
+  width: 292px;
+  /* height: 837px; */
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+
+.innericon_div {
+  border: 1px solid #d1d1d1;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  padding: 5px;
+ border-radius: 10px;
+}
+.parnt_msg_div{
+  border-radius: 15px 15px 0px 0px;
+background: var(--ui-design-white, #FFF);
+box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.05);
+}
+/* worlds icons */
+.worldicon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.mssgicon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.dotsssicon {
+  width: 20px;
+  height: 5px;
+  flex-shrink: 0;
+}
+
+.cont_global {
+  margin-top: 3px;
+  /* border: 2px solid red; */
+  margin-left: 3px;
+  height:30px;
+  display: flex;
+  align-items: center;
+}
+
+.para_global {
+  color: #0b1e1c;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  /* border:2px solid black; */
+  text-align: start;
+}
+.messagesSection {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* justify-content: space-around; */
+  padding: 5px 20px;
+}
+
+.imagesize {
+  width: 35px;
+  border-radius: 50px;
+  /* object-fit: cover; */
+}
+
+.nameStyle {
+  font-size: 14px;
+  font-weight: 600;
+  /* border: 2px solid green; */
+  margin-top: -10px;
+}
+
+.chatStyle {
+  font-size: 14px;
+  color: gray;
+  /* border: 2px solid green; */
+  margin-top: -5px;
+  margin-left: 30px;
+  padding: 6px;
+}
+
+.timeStyle {
+  color: gray;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.flextime {
+  display: flex;
+  padding: 0 10px;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  /* border: 2px solid red; */
+  margin: 3px 0;
+}
+
+.chatsdiv {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px !important;
+  /* border: 2px solid red; */
+  /* padding: 10px; */
+  margin: 0px -15px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.chatss {
+  /* border: 2px solid red; */
+  padding: 0 10px;
+  margin-top: -6px;
+  display: flex;
+  justify-content: center;
+  margin-right: -12px;
+}
+
+.message_cont_box {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: rgb(159, 156, 156);
+  height: 40px;
+}
+
+.sceny_icon {
+  /* border: 2px solid green; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sceny_icon > p {
+  font-size: 14px;
+}
+
+.icon_simle {
+  font-size: 22px;
+}
+
+.icon_img {
+  font-size: 24px;
+}
+
+.pop_message {
+  display: block;
+}
+                      /* reply css */
+.michalhead{
+  color: var(--ui-design-primary, #00808B);
+font-family: Gilroy;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 133.333% */
+}
+
+.meetpara{
+  width: 214px;
+  color: var(--ui-design-text-secondary-text, #465D61);
+  font-family: gilroy light;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+.wellpara{
+  color: var(--ui-design-text-secondary-text, #465D61);
+  width: 224px;
+  font-family: gilroy light;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+
+.desc_div{
+  border:1px solid silver;
+  width: 70%;
+  margin:auto;
+  padding: 12px;
+  gap: 12px;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+}
+  
+            /* desktop  */
+
+  .desc_div_desk{
+     border:1px solid silver;
+  /* width: 292px; */
+  margin:auto;
+  padding: 12px;
+  gap: 12px;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+ 
+  }          
+
+  .michalhead_desk{
+    /* border:2px solid black; */
+    color: var(--ui-design-primary, #00808B);
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    
+  }
+.elmer_para{
+  color: var(--ui-design-text-secondary-text, #465D61);
+/* font-family: Gilroy; */
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+width: 214px;
+text-align: left;
+}
+  .wellpara_desk{
+    color: var(--ui-design-text-secondary-text, #465D61);
+    /* font-family: Gilroy; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; 
+    text-align: start;
+  }
 
 
-                                /* worlds icons */
-                                .worldicon {
-                                  width: 24px;
-                                  height: 24px;
-                                  flex-shrink: 0;
-                                }
-
-                                .mssgicon {
-                                  display: flex;
-                                  width: 40px;
-                                  height: 40px;
-                                  padding: 8px;
-                                  justify-content: center;
-                                  align-items: center;
-                                  flex-shrink: 0;
-                                }
-
-                                .dotsssicon {
-                                  width: 20px;
-                                  height: 5px;
-                                  flex-shrink: 0;
-                                }
-
-                                .cont_global {
-                                  margin-top: 3px;
-                                  /* border: 2px solid red; */
-                                  margin-left: 3px;
-                                }
-
-                                /* .para_global {
-                                   color: #0B1E1C;
-                                   font-family: Gilroy;
-                                   font-size: 16px;
-                                   font-style: normal;
-                                   font-weight: 600;
-                                   line-height: 19px; 
-                                 } */
-                                .messagesSection {
-                                  /* border: 1px solid red; */
-                                  display: flex;
-                                  flex-direction: column;
-                                  justify-content: center;
-                                  /* justify-content: space-around; */
-                                  padding: 5px 20px;
-                                }
-
-                                .imagesize {
-                                  width: 35px;
-                                  border-radius: 50px;
-                                  /* object-fit: cover; */
-                                }
-
-                                .nameStyle {
-                                  font-size: 14px;
-                                  font-weight: 600;
-                                  /* border: 2px solid green; */
-                                  margin-top: -10px;
-                                }
-
-                                .chatStyle {
-                                  font-size: 14px;
-                                  color: gray;
-                                  /* border: 2px solid green; */
-                                  margin-top: -5px;
-                                  margin-left: 30px;
-                              
-                                }
-
-                                .timeStyle {
-                                  color: gray;
-                                  font-size: 14px;
-                                  margin-top: -10px;
-                                }
-
-                                .flextime {
-                                  display: flex;
-                                  padding: 0 10px;
-                                  gap: 10px;
-                                  width: 100%;
-                                  align-items: center;
-                                  /* border: 2px solid red; */
-                                  margin: 3px 0;
-                                }
-
-                                .chatsdiv {
-                                  display: flex;
-                                  flex-direction: column;
-                                  margin-bottom: 10px !important;
-                                  /* border: 2px solid red; */
-                                  /* padding: 10px; */
-                                  margin: 0px -15px;
-                                  line-height: 18px;
-                                  text-align: left;
-                                }
-
-                                .chatss {
-                                  /* border: 2px solid red; */
-                                  padding: 0 10px;
-                                  margin-top: -6px;
-                                  display: flex;
-                                  justify-content: center;
-                                  margin-right:-12px ;
-                                }
-
-                                .message_cont_box {
-                                  /* border: 2px solid red; */
-                                  display: flex;
-                                  align-items: center;
-                                  justify-content: space-between;
-                                  padding: 5px;
-                                  background-color: rgb(159, 156, 156);
-                                  height: 40px;
-                                }
-
-                                .sceny_icon {
-                                  /* border: 2px solid green; */
-                                  display: flex;
-                                  align-items: center;
-                                  gap: 10px;
-                                }
-
-                                .sceny_icon>p {
-                                  font-size: 14px;
-                                }
-
-                                .icon_simle {
-                                  font-size: 22px;
-                                }
-
-                                .icon_img {
-                                  font-size: 24px;
-                                }
-
-                                .pop_message {
-                                  display: block;
-                                }
-
-                                /* @font-face{
+/* @font-face{
                                    font-family: gilory medium;
                                    src:url(../../public/Gilroy-Medium.ttf)
                                  } */
 
-                                 @media screen and (max-width: 480px){
-                                  .menuIcondiv{
-                                        /* display: none; */
-                                        margin-top: -300px !important;
-                                        border:4px solid yellow;
-                                        position: "relative";
-                                        /* bottom: 0; */
-                                  }
-
-                                  .innericon {
-                                    display: flex;
-                                    border: 2px solid red;
-                                    justify-content: space-between;
-                                    width: 100%;
-                                    font-size: 20px;
-                                  }
-                                 }                        
+@media screen and (max-width: 480px) {
+  .menuIcondiv {
+    display: none;
+  }
+  .drawerss {
+    border: 2px solid red;
+    width: 60%;
+  }
+}

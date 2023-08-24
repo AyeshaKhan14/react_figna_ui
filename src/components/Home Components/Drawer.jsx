@@ -1,6 +1,14 @@
-import React, { useState } from "react";
-import { BiMessageAltDetail } from "react-icons/bi";
-import { BsGlobe2, BsThreeDots } from "react-icons/bs";
+import React from 'react'
+import {
+    Drawer,
+    DrawerBody,
+    DrawerFooter,
+    DrawerHeader,
+    DrawerOverlay,
+    DrawerContent,
+    DrawerCloseButton,Input,Button,useDisclosure,Box,Text
+  } from '@chakra-ui/react'
+  import  { useState } from "react";
 import { BsFillSendFill } from "react-icons/bs";
 import { AiOutlineSmile } from "react-icons/ai";
 import { BsFillImageFill } from "react-icons/bs";
@@ -15,114 +23,98 @@ import img3 from "../../assets/img3.png"
 import img4 from "../../assets/img4.png"
 import img5 from "../../assets/img5.png"
 import replyUser from "../../assets/replyUser.png"
+import {AiOutlineMessage} from "react-icons/ai"
+export const Drawers = () => {
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const btnRef = React.useRef()
+    const [message, setMessage] = useState(false);
+    const [text, setText] = useState(false);
+    const [pop, setPop] = useState(false);
 
 
-import {
-  Box, Text
-} from "@chakra-ui/react";
+    const data = [
+        {
+          image: img1,
+        name: "Elmer Laverty",
+        chat: "Hiii how yor're doing? I hope you are fine boy !!!",
+        isReplyOpen: false,
+        },
+        {
+          image: img2,
+          name: "Elmer Laverty",
+          chat: "Hiii how yor're doing? I hope you are fine boy !!!",
+        },
+        {
+          image: img3,
+          name: "Elmer Laverty",
+          chat: "Hiii how yor're doing? I hope you are fine boy !!!",
+        },
+        {
+          image: img4,
+          name: "Elmer Laverty",
+          chat: "Hiii how yor're doing? I hope you are fine boy !!!",
+        },
+        {
+          image: img5,
+          name: "Elmer Laverty",
+          chat: "Hiii how yor're doing? I hope you are fine boy !!!",
+        },
+        {
+          image: img1,
+          name: "Elmer Laverty",
+          chat: "Hiii how yor're doing? I hope you are fine boy !!!",
+        },
+        {
+          image: img1,
+          name: "Elmer Laverty",
+          chat: "Hiii how yor're doing? I hope you are fine boy !!!",
+        },
+        {
+          image: img1,
+          name: "Elmer Laverty",
+          chat: "Hiii how yor're doing? I hope you are fine boy !!!",
+        },
+        {
+          image: img1,
+          name: "Elmer Laverty",
+          chat: "Hiii how yor're doing? I hope you are fine boy !!!",
+        },
+      ];
 
-export const Message = () => {
-  const [personal, setPersonal] = useState(false);
-  const [message, setMessage] = useState(false);
-  const [text, setText] = useState(false);
-  const [pop, setPop] = useState(false);
+      const toggleDropdown2 = (e) => {
+        e.stopPropagation();
+        setMessage(!message);
+      };
+      const toggleDropdown3 = (e) => {
+        e.stopPropagation();
+        setText(!text);
+      };
+      const toggleDropdown4 = (e) => {
+        e.stopPropagation();
+        setPop(!pop);
+      };
 
-  const data = [
-    {
-      image: img1,
-    name: "Elmer Laverty",
-    chat: "Hiii how yor're doing? I hope you are fine boy !!!",
-    isReplyOpen: false,
-    },
-    {
-      image: img2,
-      name: "Elmer Laverty",
-      chat: "Hiii how yor're doing? I hope you are fine boy !!!",
-    },
-    {
-      image: img3,
-      name: "Elmer Laverty",
-      chat: "Hiii how yor're doing? I hope you are fine boy !!!",
-    },
-    {
-      image: img4,
-      name: "Elmer Laverty",
-      chat: "Hiii how yor're doing? I hope you are fine boy !!!",
-    },
-    {
-      image: img5,
-      name: "Elmer Laverty",
-      chat: "Hiii how yor're doing? I hope you are fine boy !!!",
-    },
-    {
-      image: img1,
-      name: "Elmer Laverty",
-      chat: "Hiii how yor're doing? I hope you are fine boy !!!",
-    },
-    {
-      image: img1,
-      name: "Elmer Laverty",
-      chat: "Hiii how yor're doing? I hope you are fine boy !!!",
-    },
-    {
-      image: img1,
-      name: "Elmer Laverty",
-      chat: "Hiii how yor're doing? I hope you are fine boy !!!",
-    },
-    {
-      image: img1,
-      name: "Elmer Laverty",
-      chat: "Hiii how yor're doing? I hope you are fine boy !!!",
-    },
-  ];
 
-  const toggleDropdown1 = () => {
-    setPersonal(!personal);
-  };
-  const toggleDropdown2 = (e) => {
-    e.stopPropagation();
-    setMessage(!message);
-  };
-  const toggleDropdown3 = (e) => {
-    e.stopPropagation();
-    setText(!text);
-  };
-  const toggleDropdown4 = (e) => {
-    e.stopPropagation();
-    setPop(!pop);
-  };
 
   return (
     <>
-
-      <div
-        style={{
-          position: "fixed",
-          bottom: 0,
-          display: personal ? "none" : "block",
-        }}
-        onClick={toggleDropdown1}
-        className={mssgSty.menuIcondiv}
+      <AiOutlineMessage ref={btnRef} colorScheme='teal' onClick={onOpen} style={{color:"#00808B" ,fontSize:"24px" }}  />
+          <Drawer 
+          isOpen={isOpen}
+          placement='right'
+          onClose={onClose}
+          finalFocusRef={btnRef}
+          className={mssgSty.drawerss}
       >
-        <div className={mssgSty.innericon}>
-          <div style={{ width: "auto", display: "flex", gap: "10px",alignItems:"center" }}>
-            {" "}
-            <img className={mssgSty.worldicon} src={world} alt="" />
-                  <img className={mssgSty.mssgicon} src={mssg} alt="" />
-          </div>
-          <div className={mssgSty.three_none_dots}>
-          <img className={mssgSty.dotsssicon} src={dots} alt="" />
-          </div>
-        </div>
-      </div>
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerCloseButton />
+          <DrawerHeader>Member Global Chat</DrawerHeader>
 
-
-      {/* working */}
-      <div>
-        {personal && (
-          <div className={mssgSty.parnt_msg_div}>
+          <DrawerBody>
+          <div style={{ backgroundColor: "white" }}>
             <div
-              onClick={toggleDropdown1}
+            //   onClick={toggleDropdown1}
               className={mssgSty.menuIcondiv_div}
             >
               <div className={mssgSty.innericon_div}>
@@ -136,9 +128,9 @@ export const Message = () => {
                 </div>
               </div>
             </div>
-            <div className={mssgSty.cont_global}>
+            {/* <div className={mssgSty.cont_global}>
               <p className={mssgSty.para_global}> Member Global Chat</p>
-            </div>
+            </div> */}
             <hr color="gray" />
             <div
               className={mssgSty.scrollableDiv}
@@ -223,21 +215,21 @@ export const Message = () => {
                           <div className={mssgSty.pop_message}>
                             <Box w={"100%"} mt={2} border="1px solid silver" borderRight={"none"} borderLeft={"none"}>
                               {/* image */}
-                              <Box mt={2} display={"flex"} justifyContent={"space-around"} alignItems={"center"}>
-                                <Box> 
-                                  <img
+                              <Box mt={2} display={"flex"} justifyContent={"space-between"} alignItems={"center"}>
+                                <Box> <img
                                   className={mssgSty.imagesize}
-                                 src={replyUser}  alt=""
+                                  src={replyUser}                                  alt=""
                                 /></Box>
                                 <Text as="b">Luis Michael</Text>
                                 <Text color="gray">just now</Text>
                               </Box>
                               {/* description */}
-                              <Box className={mssgSty.desc_div_desk}>
-                                <Text className={mssgSty.michalhead_desk} >@abcMiccy</Text>
-                                <Text className={mssgSty.elmer_para} >Hi,this is Elmer here.Good to meet you all</Text>
+                              <Box className={mssgSty.desc_div}>
+                                <vr/>
+                                <Text className={mssgSty.michalhead} >@abcMiccy</Text>
+                                <Text className={mssgSty.meetpara} >Hi,this is Elmer here.Good to meet you all</Text>
 
-                                <Text className={mssgSty.wellpara_desk}>Hi,Elmer Welcom</Text>
+                                <Text className={mssgSty.wellpara}>Hi,Elmer Welcom</Text>
                               </Box>
                             </Box>
                           </div>
@@ -267,8 +259,17 @@ export const Message = () => {
               </div>
             </div>
           </div>
-        )}
-      </div>
+          </DrawerBody>
+
+          {/* <DrawerFooter>
+            <Button variant='outline' mr={3} onClick={onClose}>
+              Cancel
+            </Button>
+            <Button colorScheme='blue'>Save</Button>
+          </DrawerFooter> */}
+        </DrawerContent>
+      </Drawer>
+
     </>
-  );
-};
+  )
+}
