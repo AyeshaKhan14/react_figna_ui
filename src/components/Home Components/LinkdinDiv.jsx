@@ -24,6 +24,7 @@ import share from "../../assets/share.png";
 import comment from "../../assets/Comment.png";
 import user from "../../assets/user.jpg";
 import send from "../../assets/Send.png";
+import share1 from "../../assets/share1.jpg"
 import {
   Modal,
   ModalOverlay,
@@ -99,8 +100,8 @@ const LinkdinDiv = () => {
                   </div>
                 </div>
                 <div className={linkStyle.text_div}>
-                  <Text as="b">{data.name}</Text>
-                  <Text textAlign={"start"} color={"gray"} fontSize={"12px"}>
+                  <Text className={linkStyle.heading_name}>{data.name}</Text>
+                  <Text className={linkStyle.hrs_heading}>
                     {data.info}
                   </Text>
                 </div>
@@ -386,42 +387,43 @@ const LinkdinDiv = () => {
                   {/* share modal */}
 
                   {
-                    <Modal
+                    <Modal w={"624px"}
                       isOpen={isShareModalOpen}
                       onClose={onShareModalClose}
                     >
                       <ModalOverlay />
-                      <ModalContent className={linkStyle.modalContent_share}>
-                        <ModalHeader>Send to</ModalHeader>
+                      <ModalContent  className={linkStyle.modalContent_share}>
+                        <ModalHeader className={linkStyle.senddd}>Send to</ModalHeader>
                         <ModalCloseButton />
                         <ModalBody
                           className={linkStyle.modal_share}
                           h={"auto"}
                           mb={10}
                         >
-                          <Box w={"90%"} m={"auto"}>
-                            <InputGroup>
+                          <Box>
+                            <InputGroup   className={linkStyle.input_chakra}>
                               <InputLeftElement
                                 pointerEvents="none"
                                 children={<SearchIcon color="black" />}
                               />
                               <Input
                                 htmlSize={4}
-                                width="100%"
+                                width="644px"
                                 placeholder="Search"
-                                backgroundColor="silver"
+                              
                               />
                             </InputGroup>
                           </Box>
-                          <Box
+                          <Box border="1px solid green"
                             w={"90%"}
                             m={"auto"}
                             mt={6}
                             display="flex"
                             alignItems="center"
-                            justifyContent="space-between"
+                            justifyContent="center"
+                           
                           >
-                            <Box>
+                            <Box className={linkStyle.box_share} >
                               <Box
                                 w={"auto"}
                                 h={"100%"}
@@ -439,7 +441,7 @@ const LinkdinDiv = () => {
                                     w={"100%"}
                                     height={"100%"}
                                     borderRadius={"50%"}
-                                    src="https://bit.ly/dan-abramov"
+                                    src={share1}
                                     alt="Dan Abramov"
                                   />
                                 </Box>
@@ -858,7 +860,8 @@ const LinkdinDiv = () => {
             </div>
 
             <div className={linkStyle.div_comment_section}>
-              <div>write a comment</div>
+              <input type="text" placeholder="write a comment"/>
+                
             </div>
 
             <div className={linkStyle.div_send_section}>

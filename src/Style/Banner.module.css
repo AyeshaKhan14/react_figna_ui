@@ -62,7 +62,7 @@
   }
   .div_three > p {
     color: var(--ui-design-text-secondary-text, #465D61);
-    font-family: Gilroy;
+    /* font-family: gilroy light; */
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -70,7 +70,7 @@
   }
   .para {
     color: var(--ui-design-text-secondary-text, #465D61);
-    font-family: Gilroy;
+    /* font-family: gilroy light; */
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -93,7 +93,7 @@
   }
   .h5div>h5{
     color: #0B1E1C;
-    font-family: gilroy;
+    /* font-family: gilroy; */
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -109,7 +109,7 @@
   
   .follwer_para{
     color: var(--ui-design-text-primary-text, #0D1B1D);
-    font-family: gilroy;
+    /* font-family: gilroy light; */
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -142,3 +142,22 @@
     }
   }
  
+  @media screen and (min-width: 200px) and (max-width: 400px) {
+    .user_profile_cont {
+      width: 65%;
+      margin: auto;
+      /* border:none; */
+      /* border:3px solid purple; */
+    
+    }
+    .followrs_div {
+      /* border: 2px solid black; */
+      width: 202px;
+    }
+    .horizental_line{
+      width: 232px;
+    height: 0.5px;
+    border:1px solid #D1D1D1;
+    }
+  }
+  

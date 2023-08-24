@@ -22,17 +22,16 @@
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (min-width: 200px) and (max-width: 400px) {
     .sidebar_container{
-        /* border:2px solid green; */
-        width:70px;
-        height:700px;
+        border:2px solid green;
+        width:100%;
         display: flex;
        
     
     }
     .main_home_container{
-        /* border:2px solid rgb(3, 86, 66); */
+        border:2px solid rgb(3, 86, 66);
         height:auto;
         width:100%;
     }

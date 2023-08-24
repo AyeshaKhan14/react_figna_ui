@@ -68,8 +68,28 @@
     margin-left: -20px;
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap:4px;
 }
+.heading_name{
+    color: var(--ui-design-text-primary-text, #0D1B1D);
+    font-family: gilroy light;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 19px; 
+}
+.hrs_heading{
+color: var(--ui-design-text-secondary-text, #465D61);
+/* font-family: gilroy light; */
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+}
+
+
+
 
 .main_big_image{
     width: 616px;
@@ -257,15 +277,17 @@ align-items: center;
 border: 1px solid var(--ui-design-strokes-stroke, #D1D1D1);
 }
 
-.div_comment_section>div{
+.div_comment_section>input{
     width: 460px;
-    color: var(--ui-design-text-secondary-text, #465D61);
-    font-family: Gilroy;
+    /* color: var(--ui-design-text-secondary-text, #465D61); */
+    font-family: inter;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px; /* 142.857% */
     text-align: start;
+    color:black;
+    height:100%;
 }
 
 .div_send_section{
@@ -300,7 +322,7 @@ border: 1px solid var(--ui-design-strokes-stroke, #D1D1D1);
 .unflw_para{
     color: var(--ui-design-text-secondary-text, #465D61);
 text-align: center;
-font-family: Gilroy;
+font-family: inter;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -310,7 +332,7 @@ line-height: 20px; /* 142.857% */
 .hamunpata{
     color: var(--ui-design-text-primary-text, #0D1B1D);
 text-align: center;
-font-family: Gilroy;
+font-family: inter;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
@@ -328,22 +350,40 @@ line-height: normal;
     line-height: normal;
 }
 .unflp{
-   
-font-family: Gilroy;
+ font-family: Inter;
 font-size: 14px;
 font-style: normal;
 font-weight: 600;
 line-height: 20px; /* 142.857% */
 }
 
+                          /* share modal css */
 
+.modalContent_share{
+    border:2px solid red;
+  width: 624px;
+/* height: 873px; */
+flex-shrink: 0;
+border-radius: 15px;
+background: var(--ui-design-white, #FFF);
+}
+.senddd{
+color: var(--ui-design-text-primary-text, #0D1B1D);
+font-family: inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 100% */
+}
 
+.input_chakra{
+border-radius: 30px;
+background: var(--ui-design-search-bar, #E7E7E7);
+}
 
-
-
-
-
-
+.box_share{
+    border:2px solid red;
+}
 
 
 

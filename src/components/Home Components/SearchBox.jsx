@@ -3,14 +3,8 @@ import searchStyle from "../../Style/SearchBox.module.css"
 import {AiOutlineSearch} from "react-icons/ai"
 import {MdNotificationsNone} from "react-icons/md"
 import user from "../../assets/user.jpg"
-
-import {
- Box,Text,Image
-} from '@chakra-ui/react'
 import chartgreen from "../../assets/Chart.png"
-import {
- useDisclosure
-} from '@chakra-ui/react'
+import redchart from "../../assets/redchart.png"
 import { Drawers } from './Drawer'
 
 export const SearchBox = () => {
@@ -23,7 +17,9 @@ export const SearchBox = () => {
         <div className={searchStyle.new_search_div}>
             <div className={searchStyle.search_queiry_box}>
               <span className={searchStyle.search_icons}><AiOutlineSearch/></span>
-              <div className={searchStyle.seach_div_text}>Search</div>
+              <div className={searchStyle.seach_div_text}>
+                <input type="text" placeholder='Search'  />
+              </div>
             </div>
        
         <div className={searchStyle.icons_notid_div}>
@@ -39,10 +35,10 @@ export const SearchBox = () => {
       </div>
 
       {/* grid section */}
-      <div className={searchStyle.grid_section_div}>
+      {/* <div className={searchStyle.grid_section_div}> */}
 
             {/* box-1-chart */}
-          <div className={searchStyle.chart_div1}>
+          {/* <div className={searchStyle.chart_div1}>
            <div className={searchStyle.chart_inner}>
 
             <div className={searchStyle.errdd_para}>
@@ -55,10 +51,10 @@ export const SearchBox = () => {
            <img  className={searchStyle.chart_img} src={chartgreen} alt="" />
             </div>
             </div> 
-       </div>
+       </div> */}
 
             {/* box-2-chart */}
-            <div className={searchStyle.chart_div1}>
+            {/* <div className={searchStyle.chart_div1}>
            <div className={searchStyle.chart_inner}>
 
             <div className={searchStyle.errdd_para}>
@@ -68,13 +64,13 @@ export const SearchBox = () => {
             </div>
            
             <div>
-           <img  className={searchStyle.chart_img} src={chartgreen} alt="" />
+           <img  className={searchStyle.chart_img} src={redchart} alt="" />
             </div>
             </div> 
-       </div>
+       </div> */}
 
             {/* box-3-chart */}
-            <div className={searchStyle.chart_div1}>
+            {/* <div className={searchStyle.chart_div1}>
            <div className={searchStyle.chart_inner}>
 
             <div className={searchStyle.errdd_para}>
@@ -87,11 +83,11 @@ export const SearchBox = () => {
            <img  className={searchStyle.chart_img} src={chartgreen} alt="" />
             </div>
             </div> 
-       </div>
+       </div> */}
 
 
                  {/* box-4-chart */}
-          <div className={searchStyle.chart_div1}>
+          {/* <div className={searchStyle.chart_div1}>
            <div className={searchStyle.chart_inner}>
 
             <div className={searchStyle.errdd_para}>
@@ -101,15 +97,15 @@ export const SearchBox = () => {
             </div>
            
             <div>
-           <img  className={searchStyle.chart_img} src={chartgreen} alt="" />
+           <img  className={searchStyle.chart_img} src={redchart} alt="" />
             </div>
             </div> 
-       </div>
+       </div> */}
 
 
 
                {/* box-5-chart */}
-               <div className={searchStyle.chart_div1}>
+               {/* <div className={searchStyle.chart_div1}>
            <div className={searchStyle.chart_inner}>
 
             <div className={searchStyle.errdd_para}>
@@ -123,9 +119,9 @@ export const SearchBox = () => {
             </div>
             </div> 
        </div>
- 
+  */}
                 {/* box-6-chart */}
-          <div className={searchStyle.chart_div1}>
+          {/* <div className={searchStyle.chart_div1}>
            <div className={searchStyle.chart_inner}>
 
             <div className={searchStyle.errdd_para}>
@@ -135,13 +131,13 @@ export const SearchBox = () => {
             </div>
            
             <div>
-           <img  className={searchStyle.chart_img} src={chartgreen} alt="" />
+           <img  className={searchStyle.chart_img} src={redchart} alt="" />
             </div>
             </div> 
-       </div>
+       </div> */}
 
             {/* box-7-chart */}
-            <div className={searchStyle.chart_div1}>
+            {/* <div className={searchStyle.chart_div1}>
            <div className={searchStyle.chart_inner}>
 
             <div className={searchStyle.errdd_para}>
@@ -154,9 +150,9 @@ export const SearchBox = () => {
            <img  className={searchStyle.chart_img} src={chartgreen} alt="" />
             </div>
             </div> 
-       </div>
+       </div> */}
 
-</div>
+{/* </div> */}
     </>
   
   )

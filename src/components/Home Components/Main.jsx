@@ -7,7 +7,7 @@ export const Main = () => {
     <>
      <div className='main_cont_box1'><SearchBox/></div>
 
-     <div  style={{height:"auto",width:"auto"}}><FeedBox/></div>
+     {/* <div  style={{height:"auto",width:"auto"}}><FeedBox/></div> */}
      </>
    
   )

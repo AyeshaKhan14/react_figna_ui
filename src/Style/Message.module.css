@@ -8,6 +8,7 @@
   /* width: 20%; */
   border-radius: 5px;
   align-items: center;
+background: var(--ui-design-primary, #00808B);
  
 }
 

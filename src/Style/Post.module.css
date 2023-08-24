@@ -57,13 +57,13 @@
     /* border:1px solid black; */
     display: inline-flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-around;
   }
   .addphotopara{
     color: var(--ui-design-text-primary-text, #0D1B1D);
   text-align: center;
-  font-family: Gilroy;
+  /* font-family: gilroy light; */
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
