@@ -204,7 +204,11 @@ border-right: none;
     font-weight: 500;
     line-height: 19px; /* 118.75% */
 }
-
+.like_div>img{
+    width: 20px;
+height: 20px;
+flex-shrink: 0;
+}
 .commt_div{
     width:160px;
     height:36px;
@@ -225,6 +229,11 @@ font-style: normal;
 font-weight: 500;
 line-height: 19px; /* 118.75% */
 }
+.commt_div>img{
+    width: 20px;
+height: 20px;
+flex-shrink: 0;
+}
 
               /* commt share like */
 .share_div{
@@ -244,6 +253,12 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 19px; /* 118.75% */
+}
+.share_div>img{
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    /* border:2px solid black; */
 }
                
                            /* write a comment */
@@ -299,6 +314,7 @@ border: 1px solid var(--ui-design-strokes-stroke, #D1D1D1);
 
 .div_send_section>img{
     border-radius: 50%;
+    /* border:2px solid yellow */
 }
 
 .teal-button {
@@ -360,7 +376,7 @@ line-height: 20px; /* 142.857% */
                           /* share modal css */
 
 .modalContent_share{
-    border:2px solid red;
+    /* border:2px solid red; */
   width: 624px;
 /* height: 873px; */
 flex-shrink: 0;
@@ -381,19 +397,19 @@ border-radius: 30px;
 background: var(--ui-design-search-bar, #E7E7E7);
 }
 
-.box_share{
+/* .box_share{
     border:2px solid red;
-}
+} */
 
 
 
 
 @media screen and (max-width: 480px) {
-    .link_container {
+    /* .link_container {
       width: 95%;
       /* border:1px solid red; */
      
-    }
+    
     .innerdiv_link {
       width: 100%;
     }
@@ -408,9 +424,7 @@ background: var(--ui-design-search-bar, #E7E7E7);
       width: 100%;
       /* border:2px solid black; */
     }
-    .div_comment_section {
-      width: 90%;
-    }
+   
     .whole_cont {
       width: 100%;
     
@@ -443,11 +457,14 @@ background: var(--ui-design-search-bar, #E7E7E7);
     }
 
     .post_last_div{
-    display: flex;
-    /* border:1px solid red; */
-    gap: 2px;
-    align-items: center;
-    }
+        width:100%;
+      display: flex;
+      /* border:1px solid red; */
+      gap: 2px;
+      align-items: center;
+      justify-content: space-around;
+
+      }
     .div_comment_section{
         /* border:1px solid green; */
         width:284px;
@@ -459,15 +476,101 @@ background: var(--ui-design-search-bar, #E7E7E7);
     }
     .share_cokmmt_div{
         border:1px solid #D1D1D1;
-        width:336px;
+        /* width:336px; */
             gap: 8px;
-        margin-top: -20px;
+        /* margin-top: -20px; */
+        /* border:2px solid green; */
        
         }
         
+    }
+
+  @media screen and (min-width: 200px) and (max-width: 400px){
+    /* .link_container {
+        width: 95%;
+        /* border:1px solid red; */
+       
+    
+      .innerdiv_link {
+        width: 100%;
+      }
+      .main_big_image {
+        width: 100%;
+        height:270px;
+       
+      }
+      .like_cokmmt_div,
+      .share_cokmmt_div,
+      .post_last_div {
+        width: 100%;
+        /* border:2px solid black; */
+      }
+      /* .div_comment_section {
+        width: 90%;
+        border:5px solid yellow;
+      } */
+      .whole_cont {
+        width: 100%;
+      
+      }
+      .share_div{
+          width:90px;
+          height:36px;
+          display: flex;
+          padding: 0px 0px;
+          justify-content: center;
+          align-items: center;
+          gap: 4px;
+          /* border:2px solid red; */
+      }
+      .share_div>p{
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 200;
+      line-height: 19px; /* 118.75% */
+      }
+     .loreum_cont{
+      /* border:2px solid blue; */
+      display: flex;
+      justify-content: center;
+     }
+      
+      .detal_cont {
+        width: 90%;
+        text-align: center;
+      }
+  
+      .post_last_div{
+        width:100%;
+      display: flex;
+      /* border:1px solid red; */
+      gap: 2px;
+      align-items: center;
+      justify-content: space-around;
+
+      }
+      .div_comment_section{
+          /* border:1px solid green; */
+          width:284px;
+      }
+      
+      .div_comment_section>div{
+          font-family: Gilroy;
+          font-size: 12px;
+      }
+      .share_cokmmt_div{
+          border:1px solid #D1D1D1;
+          /* width:336px; */
+              gap: 8px;
+          /* margin-top: -20px; */
+          /* border:2px solid green; */
+         
+          }
+
+          .like_cokmmt_div{
+
+          }
   }
-
-
 
 
 

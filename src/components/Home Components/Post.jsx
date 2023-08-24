@@ -1,6 +1,6 @@
 import React from 'react'
 import posts from "../../Style/Post.module.css"
-import user from "../../assets/user.jpg"
+import user from "../../assets/userHD.jpg"
 import image from "../../assets/Image.png"
 import vedio from "../../assets/Video.png"
 import {

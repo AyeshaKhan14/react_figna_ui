@@ -1,7 +1,7 @@
 import React from 'react'
 import sideStyle from "../../Style/Sidebar.module.css";
 import { HomeIcons } from './HomeIcons';
-import logout from "../../assets/logout.jpg"
+import logout from "../../assets/logoutHD.jpg"
 import logo from "../../assets/logo.png"
 
 export const SideBar = () => {

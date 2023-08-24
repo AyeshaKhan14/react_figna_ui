@@ -33,7 +33,7 @@
     .main_home_container{
         border:2px solid rgb(3, 86, 66);
         height:auto;
-        width:100%;
+        /* width:100%; */
     }
     .home_container{
         width: 100%;

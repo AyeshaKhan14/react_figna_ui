@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BiMessageAltDetail } from "react-icons/bi";
+import { AiOutlineSearch } from "react-icons/ai";
 import { BsGlobe2, BsThreeDots } from "react-icons/bs";
 import { BsFillSendFill } from "react-icons/bs";
 import { AiOutlineSmile } from "react-icons/ai";
@@ -15,7 +15,8 @@ import img3 from "../../assets/img3.png"
 import img4 from "../../assets/img4.png"
 import img5 from "../../assets/img5.png"
 import replyUser from "../../assets/replyUser.png"
-
+import {FaChevronUp} from "react-icons/fa"
+import {TfiWorld} from "react-icons/tfi"
 
 import {
   Box, Text
@@ -107,12 +108,17 @@ export const Message = () => {
         <div className={mssgSty.innericon}>
           <div style={{ width: "auto", display: "flex", gap: "10px",alignItems:"center" }}>
             {" "}
-            <img className={mssgSty.worldicon} src={world} alt="" />
-                  <img className={mssgSty.mssgicon} src={mssg} alt="" />
+           <TfiWorld className={mssgSty.icon_sameColor}/>
           </div>
-          <div className={mssgSty.three_none_dots}>
-          <img className={mssgSty.dotsssicon} src={dots} alt="" />
+
+          <div className={mssgSty.mssgpop_div}>
+        
+             <FaChevronUp className={mssgSty.icon_sameColor}/>
+            <AiOutlineSearch className={mssgSty.icon_sameColor}/>
+             <BsThreeDots className={mssgSty.icon_sameColor}/>
           </div>
+       
+        
         </div>
       </div>
 

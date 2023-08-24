@@ -34,12 +34,13 @@
   height: 80px;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
   }
   .two > img {
     width: 80px;
   height: 80px;
   flex-shrink: 0;
-  border-radius: 80px;
+  border-radius: 50%;
   background: url(../assets/user.jpg), lightgray 50% / cover no-repeat;
   }
   
@@ -125,7 +126,7 @@
 
   @media screen and (max-width: 480px){
     .user_profile_cont {
-      width: 65%;
+      /* width: 65%; */
       margin: auto;
       /* border:none; */
       /* border:3px solid purple; */
@@ -144,7 +145,7 @@
  
   @media screen and (min-width: 200px) and (max-width: 400px) {
     .user_profile_cont {
-      width: 65%;
+      /* width: 65%; */
       margin: auto;
       /* border:none; */
       /* border:3px solid purple; */

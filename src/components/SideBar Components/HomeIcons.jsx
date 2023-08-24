@@ -1,11 +1,11 @@
 import React from 'react'
 import sideICons from "../../Style/Sidebar.module.css"
-import set from "../../assets/setting.png"
-import home from "../../assets/home.jpg"
-import discover from  "../../assets/Discover.jpg"
-import pro from "../../assets/pro.jpg"
-import book from "../../assets/book.jpg"
-import mssg from "../../assets/mssg.jpg"
+import set from "../../assets/settingHD.png"
+import home from "../../assets/homeHd.jpg"
+import discover from  "../../assets/DiscoverHD.jpg"
+import pro from "../../assets/proHd.jpg"
+import book from "../../assets/bookHD.jpg"
+import mssg from "../../assets/mssgHd.jpg"
 
 
 export const HomeIcons = () => {

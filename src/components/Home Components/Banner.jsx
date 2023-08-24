@@ -1,6 +1,6 @@
 import React from 'react'
 import ban from "../../Style/Banner.module.css"
-import user from "../../assets/user.jpg"
+import user from "../../assets/userHD.jpg"
 import banner from "../../assets/Banner.png"
 
 export const Banner = () => {

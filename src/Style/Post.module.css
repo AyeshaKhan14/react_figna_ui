@@ -153,3 +153,35 @@
      /* border:2px solid black; */
     }
   }
+
+  @media screen and (min-width: 200px) and (max-width: 400px){
+    .fedd_cont_section2 {
+      width: 100%;
+      margin-top: 4%;
+      border:1px solid black;
+    }
+    .post_msgg_div {
+      /* width: 100%; */
+      border:1px solid red;
+    }
+    .seprateLine {
+      width: 100%;
+    }
+    .div3_post {
+       gap:15px;
+      /* border:1px solid green; */
+       justify-content: space-between;
+    }
+    .photo_div {
+      /* border:1px solid black; */
+      display:flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .postbutn {
+      width: 70px;
+     /* border:2px solid black; */
+    }
+  }

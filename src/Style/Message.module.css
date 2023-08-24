@@ -8,6 +8,7 @@
   /* width: 20%; */
   border-radius: 5px;
   align-items: center;
+  height:40px;
 background: var(--ui-design-primary, #00808B);
  
 }
@@ -25,6 +26,15 @@ background: var(--ui-design-primary, #00808B);
   font-size: 20px;
   align-items: center;
 
+}
+.mssgpop_div{
+  display: flex;
+  /* border:2px solid teal; */
+  gap:10px;
+}
+.icon_sameColor{
+  color:white;
+  font-size: 20px;
 }
 
 .menuIcondiv_div {

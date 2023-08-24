@@ -19,11 +19,11 @@ import { SearchIcon } from "@chakra-ui/icons";
 import { BiSolidHide } from "react-icons/bi";
 import person from "../../assets/person.png";
 import heart from "../../assets/heart.png";
-import whiteheart from "../../assets/Like.png";
-import share from "../../assets/share.png";
-import comment from "../../assets/Comment.png";
-import user from "../../assets/user.jpg";
-import send from "../../assets/Send.png";
+import whiteheart from "../../assets/LikeHd.png";
+import share from "../../assets/shareHD.png";
+import comment from "../../assets/commentHD.png";
+import user from "../../assets/userHD.jpg";
+import send from "../../assets/sendHD.png";
 import share1 from "../../assets/share1.jpg"
 import {
   Modal,
@@ -387,7 +387,7 @@ const LinkdinDiv = () => {
                   {/* share modal */}
 
                   {
-                    <Modal w={"624px"}
+                    <Modal 
                       isOpen={isShareModalOpen}
                       onClose={onShareModalClose}
                     >
@@ -413,16 +413,22 @@ const LinkdinDiv = () => {
                               
                               />
                             </InputGroup>
+
+                            {/* box -1 */}
                           </Box>
-                          <Box border="1px solid green"
-                            w={"90%"}
+                          <Box
+                            w={"100%"}
                             m={"auto"}
                             mt={6}
                             display="flex"
                             alignItems="center"
-                            justifyContent="center"
-                           
-                          >
+                           justifyContent="space-between"
+                            gap={54}
+                           borderTop={"none"}
+                           borderRight={"none"}
+                           borderLeft={"none"} 
+                           borderBottom={"1pz solid #D1D1D1;"}
+                          >   
                             <Box className={linkStyle.box_share} >
                               <Box
                                 w={"auto"}
@@ -446,10 +452,10 @@ const LinkdinDiv = () => {
                                   />
                                 </Box>
                                 <Box>
-                                  <Text fontSize="14px" fontWeight="bold">
-                                    Hamza Anjum
+                                  <Text fontSize="14px" fontWeight="700" lineHeight={"normal"} fontStyle={"normal"} >
+                                  Lorem Ipsum
                                   </Text>
-                                  <Text fontSize="12px" color="gray">
+                                  <Text fontSize="12px" color="#465D61" fontWeight={"400"} fontStyle={"normal"} lineHeight={"20px"} >
                                     UI/UX Designer
                                   </Text>
                                 </Box>
@@ -462,10 +468,11 @@ const LinkdinDiv = () => {
                                     ? linkStyle["black-button"]
                                     : ""
                                 }`}
-                                mr={3}
+                                // mr={3}
                                 w={32}
-                                borderRadius="10"
+                                borderRadius="50"
                                 h={10}
+                                color={"white"}
                                 onClick={handleButtonClick}
                                 style={{
                                   backgroundColor:
@@ -476,9 +483,10 @@ const LinkdinDiv = () => {
                               </Button>
                             </Box>
                           </Box>
-
+                           {/* <hr ></hr> */}
+                         {/* box-2 */}
                           <Box
-                            w={"90%"}
+                            w={"100%"}
                             m={"auto"}
                             mt={4}
                             display="flex"
@@ -508,10 +516,10 @@ const LinkdinDiv = () => {
                                   />
                                 </Box>
                                 <Box>
-                                  <Text fontSize="14px" fontWeight="bold">
-                                    Hamza Anjum
+                                <Text fontSize="14px" fontWeight="700" lineHeight={"normal"} fontStyle={"normal"} >
+                                  Lorem Ipsum
                                   </Text>
-                                  <Text fontSize="12px" color="gray">
+                                  <Text fontSize="12px" color="#465D61" fontWeight={"400"} fontStyle={"normal"} lineHeight={"20px"} >
                                     UI/UX Designer
                                   </Text>
                                 </Box>
@@ -524,10 +532,11 @@ const LinkdinDiv = () => {
                                     ? linkStyle["black-button"]
                                     : ""
                                 }`}
-                                mr={3}
+                                // mr={3}
                                 w={32}
-                                borderRadius="10"
+                                borderRadius="50"
                                 h={10}
+                                color={"white"}
                                 onClick={handleButtonClick}
                                 style={{
                                   backgroundColor:
@@ -540,8 +549,137 @@ const LinkdinDiv = () => {
                             </Box>
                           </Box>
 
+                           {/* box-3 */}
                           <Box
-                            w={"90%"}
+                            w={"100%"}
+                            m={"auto"}
+                            mt={4}
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="space-between"
+                          >
+                            <Box>
+                              <Box
+                                w={"auto"}
+                                h={"100%"}
+                                display="flex"
+                                gap={4}
+                                alignItems="center"
+                              >
+                                <Box
+                                  w="40px"
+                                  h="40px"
+                                  borderRadius="50%"
+                                  bg="blue"
+                                >
+                                  <Image
+                                    w={"100%"}
+                                    height={"100%"}
+                                    borderRadius={"50%"}
+                                    src="https://bit.ly/dan-abramov"
+                                    alt="Dan Abramov"
+                                  />
+                                </Box>
+                                <Box>
+                                <Text fontSize="14px" fontWeight="700" lineHeight={"normal"} fontStyle={"normal"} >
+                                  Lorem Ipsum
+                                  </Text>
+                                  <Text fontSize="12px" color="#465D61" fontWeight={"400"} fontStyle={"normal"} lineHeight={"20px"} >
+                                    UI/UX Designer
+                                  </Text>
+                                </Box>
+                              </Box>
+                            </Box>
+                            <Box>
+                              <Button
+                                className={`${linkStyle["teal-button"]} ${
+                                  isButtonClicked === true
+                                    ? linkStyle["black-button"]
+                                    : ""
+                                }`}
+                                // mr={3}
+                                w={32}
+                                borderRadius="50"
+                                h={10}
+                                color={"white"}
+                                onClick={handleButtonClick}
+                                style={{
+                                  backgroundColor:
+                                    isButtonClicked === true ? "black" : "teal",
+                                }}
+                              >
+                                {isButtonClicked ? "Sent" : "Send"}
+                              </Button>
+                            </Box>
+                          </Box>
+
+
+                           {/* box-4 */}
+                          <Box
+                            w={"100%"}
+                            m={"auto"}
+                            mt={4}
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="space-between"
+                          >
+                            <Box>
+                              <Box
+                                w={"auto"}
+                                h={"100%"}
+                                display="flex"
+                                gap={4}
+                                alignItems="center"
+                              >
+                                <Box
+                                  w="40px"
+                                  h="40px"
+                                  borderRadius="50%"
+                                  bg="blue"
+                                >
+                                  <Image
+                                    w={"100%"}
+                                    height={"100%"}
+                                    borderRadius={"50%"}
+                                    src="https://bit.ly/dan-abramov"
+                                    alt="Dan Abramov"
+                                  />
+                                </Box>
+                                <Box>
+                                <Text fontSize="14px" fontWeight="700" lineHeight={"normal"} fontStyle={"normal"} >
+                                  Lorem Ipsum
+                                  </Text>
+                                  <Text fontSize="12px" color="#465D61" fontWeight={"400"} fontStyle={"normal"} lineHeight={"20px"} >
+                                    UI/UX Designer
+                                  </Text>
+                                </Box>
+                              </Box>
+                            </Box>
+                            <Box>
+                              <Button
+                                className={`${linkStyle["teal-button"]} ${
+                                  isButtonClicked === true
+                                    ? linkStyle["black-button"]
+                                    : ""
+                                }`}
+                                // mr={3}
+                                w={32}
+                                borderRadius="50"
+                                h={10}
+                                color={"white"}
+                                onClick={handleButtonClick}
+                                style={{
+                                  backgroundColor:
+                                    isButtonClicked === true ? "black" : "teal",
+                                }}
+                              >
+                                {isButtonClicked ? "Sent" : "Send"}
+                              </Button>
+                            </Box>
+                          </Box>
+
+                          <Box
+                            w={"100%"}
                             m={"auto"}
                             mt={4}
                             display="flex"
@@ -587,10 +725,11 @@ const LinkdinDiv = () => {
                                     ? linkStyle["black-button"]
                                     : ""
                                 }`}
-                                mr={3}
+                                // mr={3}
                                 w={32}
-                                borderRadius="10"
+                                borderRadius="50"
                                 h={10}
+                                color={"white"}
                                 onClick={handleButtonClick}
                                 style={{
                                   backgroundColor:
@@ -602,132 +741,9 @@ const LinkdinDiv = () => {
                             </Box>
                           </Box>
 
+                     {/* box-5 */}
                           <Box
-                            w={"90%"}
-                            m={"auto"}
-                            mt={4}
-                            display="flex"
-                            alignItems="center"
-                            justifyContent="space-between"
-                          >
-                            <Box>
-                              <Box
-                                w={"auto"}
-                                h={"100%"}
-                                display="flex"
-                                gap={4}
-                                alignItems="center"
-                              >
-                                <Box
-                                  w="40px"
-                                  h="40px"
-                                  borderRadius="50%"
-                                  bg="blue"
-                                >
-                                  <Image
-                                    w={"100%"}
-                                    height={"100%"}
-                                    borderRadius={"50%"}
-                                    src="https://bit.ly/dan-abramov"
-                                    alt="Dan Abramov"
-                                  />
-                                </Box>
-                                <Box>
-                                  <Text fontSize="14px" fontWeight="bold">
-                                    Hamza Anjum
-                                  </Text>
-                                  <Text fontSize="12px" color="gray">
-                                    UI/UX Designer
-                                  </Text>
-                                </Box>
-                              </Box>
-                            </Box>
-                            <Box>
-                              <Button
-                                className={`${linkStyle["teal-button"]} ${
-                                  isButtonClicked === true
-                                    ? linkStyle["black-button"]
-                                    : ""
-                                }`}
-                                mr={3}
-                                w={32}
-                                borderRadius="10"
-                                h={10}
-                                onClick={handleButtonClick}
-                                style={{
-                                  backgroundColor:
-                                    isButtonClicked === true ? "black" : "teal",
-                                }}
-                              >
-                                {isButtonClicked ? "Sent" : "Send"}
-                              </Button>
-                            </Box>
-                          </Box>
-
-                          <Box
-                            w={"90%"}
-                            m={"auto"}
-                            mt={4}
-                            display="flex"
-                            alignItems="center"
-                            justifyContent="space-between"
-                          >
-                            <Box>
-                              <Box
-                                w={"auto"}
-                                h={"100%"}
-                                display="flex"
-                                gap={4}
-                                alignItems="center"
-                              >
-                                <Box
-                                  w="40px"
-                                  h="40px"
-                                  borderRadius="50%"
-                                  bg="blue"
-                                >
-                                  <Image
-                                    w={"100%"}
-                                    height={"100%"}
-                                    borderRadius={"50%"}
-                                    src="https://bit.ly/dan-abramov"
-                                    alt="Dan Abramov"
-                                  />
-                                </Box>
-                                <Box>
-                                  <Text fontSize="14px" fontWeight="bold">
-                                    Hamza Anjum
-                                  </Text>
-                                  <Text fontSize="12px" color="gray">
-                                    UI/UX Designer
-                                  </Text>
-                                </Box>
-                              </Box>
-                            </Box>
-                            <Box>
-                              <Button
-                                className={`${linkStyle["teal-button"]} ${
-                                  isButtonClicked === true
-                                    ? linkStyle["black-button"]
-                                    : ""
-                                }`}
-                                mr={3}
-                                w={32}
-                                borderRadius="10"
-                                h={10}
-                                onClick={handleButtonClick}
-                                style={{
-                                  backgroundColor:
-                                    isButtonClicked === true ? "black" : "teal",
-                                }}
-                              >
-                                {isButtonClicked ? "Sent" : "Send"}
-                              </Button>
-                            </Box>
-                          </Box>
-
-                          <Box
-                            w={"90%"}
+                            w={"100%"}
                             m={"auto"}
                             mt={4}
                             display="flex"
@@ -756,12 +772,12 @@ const LinkdinDiv = () => {
                                 />
                               </Box>
                               <Box>
-                                <Text fontSize="14px" fontWeight="bold">
-                                  Hamza Anjum
-                                </Text>
-                                <Text fontSize="12px" color="gray">
-                                  UI/UX Designer
-                                </Text>
+                              <Text fontSize="14px" fontWeight="700" lineHeight={"normal"} fontStyle={"normal"} >
+                                  Lorem Ipsum
+                                  </Text>
+                                  <Text fontSize="12px" color="#465D61" fontWeight={"400"} fontStyle={"normal"} lineHeight={"20px"} >
+                                    UI/UX Designer
+                                  </Text>
                               </Box>
                             </Box>
                             <Box>
@@ -771,10 +787,11 @@ const LinkdinDiv = () => {
                                     ? linkStyle["black-button"]
                                     : ""
                                 }`}
-                                mr={3}
+                                // mr={3}
                                 w={32}
-                                borderRadius="10"
+                                borderRadius="50"
                                 h={10}
+                                color={"white"}
                                 onClick={handleButtonClick}
                                 style={{
                                   backgroundColor:
@@ -786,8 +803,9 @@ const LinkdinDiv = () => {
                             </Box>
                           </Box>
 
+                        {/* box-6 */}
                           <Box
-                            w={"90%"}
+                            w={"100%"}
                             m={"auto"}
                             mt={4}
                             display="flex"
@@ -816,12 +834,12 @@ const LinkdinDiv = () => {
                                 />
                               </Box>
                               <Box>
-                                <Text fontSize="14px" fontWeight="bold">
-                                  Hamza Anjum
-                                </Text>
-                                <Text fontSize="12px" color="gray">
-                                  UI/UX Designer
-                                </Text>
+                              <Text fontSize="14px" fontWeight="700" lineHeight={"normal"} fontStyle={"normal"} >
+                                  Lorem Ipsum
+                                  </Text>
+                                  <Text fontSize="12px" color="#465D61" fontWeight={"400"} fontStyle={"normal"} lineHeight={"20px"} >
+                                    UI/UX Designer
+                                  </Text>
                               </Box>
                             </Box>
                             <Box>
@@ -831,10 +849,11 @@ const LinkdinDiv = () => {
                                     ? linkStyle["black-button"]
                                     : ""
                                 }`}
-                                mr={3}
+                                // mr={3}
                                 w={32}
-                                borderRadius="10"
+                                borderRadius="50"
                                 h={10}
+                                color={"white"}
                                 onClick={handleButtonClick}
                                 style={{
                                   backgroundColor:
