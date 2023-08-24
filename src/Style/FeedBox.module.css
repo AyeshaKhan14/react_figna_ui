@@ -169,9 +169,7 @@
 .fedd_cont_section3 {
   width: 292px;
   /* border: 2px solid brown; */
-  border-radius: 15px 15px 0px 0px;
-  background: var(--ui-design-white, #FFF);
-  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.05);
+ 
 }
 
 @font-face {
