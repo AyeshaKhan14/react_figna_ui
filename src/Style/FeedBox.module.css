@@ -1,0 +1,223 @@
+              /* feed 3 div cont */
+.fedd_cont {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  /* border:2px solid yellow; */
+  margin-top: 2%;
+  border-radius: 5px;
+  gap: 10px;
+  height: 1024.061px;
+  background-color: #EEEEEE;
+}
+
+.feed_cont_div2 {
+  /* border:4px solid teal; */
+  display: flex;
+  /* border:3px solid rgb(255, 153, 0); */
+  height: 1024.061px;
+  gap: 10px;
+}
+
+.fedd_cont_section1 {
+  /* border:1px solid red; */
+  width: 21%;
+
+}
+                                  /* user progile */
+
+
+                                      /* lorems div */
+.become_a_member {
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 140px;
+  display: block;
+  margin-top:15px;
+}
+.become_a_member>p{
+  width: 247px;
+  height:40px;
+  color: #0B1E1C;
+text-align: center;
+font-family: gilroy light;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px;
+margin-left: 14px;
+}
+.become_button {
+  display: inline-flex;
+height: 44px;
+padding: 0px 28px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+flex-shrink: 0;
+border-radius: 50px;
+background: var(--ui-design-primary, #00808B);
+margin-top: 4%;
+margin-left: -5px;
+}
+
+.become_button > p {
+  color: var(--ui-design-white, #FFF);
+  font-family: gilroy light;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 19px;
+}
+
+
+               /* todays news */
+
+.today_new_div {
+  /* border: 2px solid yellow; */
+  display: flex;
+  width: 292px;
+  padding: 24px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  border-radius: 15px;
+background: #FFF;
+box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.today_inner_div{
+  /* border:1px solid red; */
+  height:285px;
+  width:249px;
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+.today_heading {
+  border: 1px solid silver;
+  width: 80%; 
+  height: 50px;
+  /* margin-top: 40px; */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.today_heading > h2 {
+  color: var(--text-color, #0B1E1C);
+  font-family: gilroy light;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: start;
+}
+
+.today_last_div {
+  /* border:2px solid green; */
+  width: 80%; 
+  height: 330px;
+}
+
+.lorewu_div {
+  /* border:2px solid black; */
+ /* width:143px; */
+ height:40px;
+ display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 4px;
+}
+
+.lorewu_div > p {
+  color: var(--ui-design-text-primary-text, #0D1B1D);
+  /* font-family: gilroy light; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 20px; 
+ 
+}
+.lorewu_div_span {
+  color: var(--ui-design-text-secondary-text, #465D61);
+  font-family: gilroy light;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+
+.today_last_div{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 12px;
+}
+.read_div {
+  /* border:2px solid brown; */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.read_div > h3 {
+  color: var(--ui-design-text-primary-text, #0D1B1D);
+  font-family: gilroy light;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+}
+
+
+
+.fedd_cont_section3 {
+  width: 292px;
+  border: 2px solid brown;
+  /* background-color: ; */
+
+}
+
+
+  @font-face {
+    font-family: gilroy light;
+    src: url(../../public/Gilroy-Light.ttf);
+  }
+                                      /* post mssg */
+
+
+
+
+
+
+                                      @media screen and (max-width: 480px) {
+                                        .fedd_cont {
+                                          flex-direction: column;
+                                          border:2px solid blue;
+                                          height:auto;
+                                        }
+                                        .fedd_cont_section1 {
+                                          width: 100%;
+                                          /* border: 3px solid teal; */
+                                        }
+                                        .become_a_member {
+                                          display: flex;
+                                          flex-direction: column;
+                                          align-items: center;
+                                        }
+                                        .become_a_member_para {
+                                          text-align: center;
+                                        }
+                                        .today_new_div {
+                                          width: 65%;
+                                          margin: auto;
+                                          /* border:2px solid red; */
+                                        }
+                                        .today_inner_div {
+                                          width: 100%;
+                                        }
+                                        .fedd_cont_section3 {
+                                          display: none;
+                                        }
+                                      }

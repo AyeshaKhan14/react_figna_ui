@@ -1,0 +1,43 @@
+.home_container{
+    /* border:2px solid red; */
+    display: flex;
+
+}
+/* sidebar */
+.sidebar_container{
+    /* border:2px solid red; */
+    width:100px;
+    height:700px;
+    display: flex;
+   
+
+}
+.main_home_container{
+    /* border:2px solid red; */
+    display: block;
+    width: 1440px;
+    height: 1024px;
+  background-color: #EEEEEE;
+
+}
+
+
+@media screen and (max-width: 480px){
+    .sidebar_container{
+        /* border:2px solid green; */
+        width:70px;
+        height:700px;
+        display: flex;
+       
+    
+    }
+    .main_home_container{
+        /* border:2px solid rgb(3, 86, 66); */
+        height:auto;
+        width:100%;
+    }
+    .home_container{
+        width: 100%;
+    }
+    
+}

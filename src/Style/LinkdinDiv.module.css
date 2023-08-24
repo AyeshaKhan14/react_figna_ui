@@ -1,0 +1,348 @@
+.avtar_div{
+    display: flex;
+}
+.flex_cont_avatr{
+   display: flex;
+    align-items: center;
+    gap:10px;
+}
+.class_avatar{
+    /* border:1px solid red; */
+    height:80px;
+    width:90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -20px;
+
+}
+.class_avatar_image{
+   /* border:1px solid blue; */
+   display: flex;
+   width: 48px;
+   height: 48px;
+   justify-content: center;
+   align-items: center;
+}
+.boder_image_radius{
+    height: 100%;
+    width:100%;
+    border-radius: 50%;
+}
+.link_container{
+    /* border:2px solid red; */
+    /* border:1px solid rgb(220, 217, 217); */
+    height:600px;
+    width:616px;
+    display: inline-flex;
+    padding: 20px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 15px;
+    background: var(--ui-design-white, #FFF);
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+.innerdiv_link{
+    height:600px;
+    width:616px;
+    /* border:1px solid purple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.whole_cont{
+    /* border:1px solid green; */
+    display: flex;
+    width: 576px;
+    justify-content: space-between;
+    align-items: center;
+    height:48px;
+}
+.text_div{
+    /* border:1px solid red; */
+    margin-left: -20px;
+}
+
+.main_big_image{
+    width: 616px;
+    height: 278px;
+    background: url(../assets/person.png), lightgray 50% / cover no-repeat, #0B1E1C;
+}
+.main_big_image>img{
+    height:100%;
+    width:100%;
+} 
+               
+                                 /* loreum para */
+
+.detal_cont{
+    /* border:1px solid red; */
+    width: 576px;
+    color: var(--ui-design-text-primary-text, #0D1B1D);
+    /* font-family: Gilroy; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+
+}
+
+                            /* LIKE COMMENt SHARE */
+
+  .like_cokmmt_div{
+    /* border:2px solid red; */
+    width:576px;
+    height:32px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+  }                            
+               
+  .heattt>img{
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+  .heattt{
+    display: flex;
+    color: #0B1E1C;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    gap:2px;
+    align-items: center;
+  }
+
+ .comment{
+    display: flex;
+    /* border:1px solid red; */
+ }
+.cmmtthree{
+    width:78px;
+    color: var(--ui-design-text-secondary-text, #465D61);
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+.shareone{
+    width:44px;
+    color: var(--ui-design-text-secondary-text, #465D61);
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+
+                                /* share now */
+
+.share_cokmmt_div{
+border:1px solid #D1D1D1;
+width:576px;
+height:36px;
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+gap: 48px;
+margin-top: -30px;
+border-top: none;
+border-left: none;
+border-right: none;
+}
+
+.like_div{
+  width:160px;
+  height:36px;
+  /* border:1px solid red; */
+  display: flex;
+    width: 160px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.like_div>p{
+    color: var(--ui-design-text-secondary-text, #465D61);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px; /* 118.75% */
+}
+
+.commt_div{
+    width:160px;
+    height:36px;
+    /* border:1px solid red; */
+display: flex;
+width: 160px;
+padding: 8px 20px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+}
+ 
+.commt_div>p{
+    color: var(--ui-design-text-secondary-text, #465D61);
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 19px; /* 118.75% */
+}
+
+              /* commt share like */
+.share_div{
+    width:160px;
+    height:36px;
+    display: flex;
+    width: 160px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.share_div>p{
+    color: var(--ui-design-text-secondary-text, #465D61);
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 19px; /* 118.75% */
+}
+               
+                           /* write a comment */
+.post_last_div{
+    margin-top: -10px;
+display: flex;
+/* border:1px solid red; */
+width:576px;
+height:40px;
+gap: 12px;
+align-items: center;
+}
+.user_icon_div>img{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.div_comment_section{
+    /* border:1px solid green; */
+    width:484px;
+    display: inline-flex;
+    padding: 10px 12px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+border: 1px solid var(--ui-design-strokes-stroke, #D1D1D1);
+}
+
+.div_comment_section>div{
+    width: 460px;
+    color: var(--ui-design-text-secondary-text, #465D61);
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    text-align: start;
+}
+
+.div_send_section{
+    /* border:1px solid blue; */
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.div_send_section>img{
+    border-radius: 50%;
+}
+
+.teal-button {
+    background-color: teal;
+    color: white;
+}
+
+.black-button {
+    background-color: black;
+    color: white;
+}
+.icon_img{
+    font-size: 50px;
+}
+.icon_airplane{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    .link_container {
+      width: 80%;
+      /* border:1px solid red; */
+     
+    }
+    .innerdiv_link {
+      width: 100%;
+    }
+    .main_big_image {
+      width: 100%;
+      height:200px;
+     
+    }
+    .like_cokmmt_div,
+    .share_cokmmt_div,
+    .post_last_div {
+      width: 100%;
+      /* border:2px solid black; */
+    }
+    .div_comment_section {
+      width: 90%;
+    }
+    .whole_cont {
+      width: 100%;
+    
+    }
+    .share_div{
+        width:90px;
+        height:36px;
+        display: flex;
+        padding: 0px 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        /* border:2px solid red; */
+    }
+    .share_div>p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 19px; /* 118.75% */
+    }
+   
+    
+    .detal_cont {
+      width: 90%;
+      text-align: center;
+    }
+  }
+
+
+
+

@@ -1,0 +1,155 @@
+.fedd_cont_section2 {
+    width: 85%;
+    /* border:1px solid red; */
+  }
+.post_msgg_div {
+    /* border:1px solid rgb(245, 12, 12); */
+    width: 616px;
+    height: 122px;
+    flex-shrink: 0;
+    border-radius: 15px;
+  background: var(--ui-design-white, #FFF);
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.05);
+  }
+  .mindpic_cont{
+    /* border:1px solid red; */
+    height:70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .mind_para{
+    color: var(--ui-design-text-primary-text, #0D1B1D);
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px; /* 118.75% */
+  }
+  .div1_post {
+    /* border:1px solid black; */
+   width:211px;
+   height:40px;
+   display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding :0.5px 0.5px;
+  }
+  .seprateLine{
+    width: 576px;
+  /* height: 0.5px; */
+  border:1px solid #D1D1D1;
+  margin-left: 15px;
+  
+  }
+  
+  .div3_post {
+    /* border:1px solid black; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+  }
+  .photo_div {
+    /* border:1px solid black; */
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  .addphotopara{
+    color: var(--ui-design-text-primary-text, #0D1B1D);
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  }
+  .ggg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon_pic {
+    width: 20px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+  .postbutn {
+    border: 1px solid teal;
+    width: 90px;
+    border-radius: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+  }
+  .div_underpost {
+    /* border:1px solid purple; */
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .div_underpost > div {
+    /* border:1px solid black; */
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+  }
+  .div_image_cont {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  /* post modal pop */
+  
+  .modal_icon {
+    font-size: 40px;
+    color: white;
+  }
+
+  @media screen and (max-width: 480px) {
+    .fedd_cont_section2 {
+      width: 100%;
+      margin-top: 4%;
+      /* border:1px solid black; */
+    }
+    .post_msgg_div {
+      width: 100%;
+      /* border:1px solid red; */
+    }
+    .seprateLine {
+      width: 100%;
+    }
+    .div3_post {
+       gap:15px;
+      /* border:1px solid green; */
+       justify-content: space-between;
+    }
+    .photo_div {
+      /* border:1px solid black; */
+      display:flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .postbutn {
+      width: 70px;
+     /* border:2px solid black; */
+    }
+  }
