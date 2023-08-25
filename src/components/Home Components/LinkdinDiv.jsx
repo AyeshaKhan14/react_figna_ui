@@ -24,7 +24,7 @@ import share from "../../assets/shareHD.png";
 import comment from "../../assets/commentHD.png";
 import user from "../../assets/userHD.jpg";
 import send from "../../assets/sendHD.png";
-import share1 from "../../assets/share1.jpg"
+import share1 from "../../assets/share1.jpg";
 import {
   Modal,
   ModalOverlay,
@@ -78,10 +78,30 @@ const LinkdinDiv = () => {
     onOpen: onShareModalOpen,
     onClose: onShareModalClose,
   } = useDisclosure();
-  const [isButtonClicked, setIsButtonClicked] = useState(false);
+  const [button1Clicked, setButton1Clicked] = useState(false);
+  const [button2Clicked, setButton2Clicked] = useState(false);
+  const [button3Clicked, setButton3Clicked] = useState(false);
+  const [button4Clicked, setButton4Clicked] = useState(false);
+  const [button5Clicked, setButton5Clicked] = useState(false);
+  const [button6Clicked, setButton6Clicked] = useState(false);
+  const [button7Clicked, setButton7Clicked] = useState(false);
 
-  const handleButtonClick = () => {
-    setIsButtonClicked(true);
+  const handleButtonClick = (buttonNumber) => {
+    if (buttonNumber === 1) {
+      setButton1Clicked((prevValue) => !prevValue);
+    } else if (buttonNumber === 2) {
+      setButton2Clicked((prevValue) => !prevValue);
+    } else if (buttonNumber === 3) {
+      setButton3Clicked((prevValue) => !prevValue);
+    } else if (buttonNumber === 4) {
+      setButton4Clicked((prevValue) => !prevValue);
+    } else if (buttonNumber === 5) {
+      setButton5Clicked((prevValue) => !prevValue);
+    } else if (buttonNumber === 6) {
+      setButton6Clicked((prevValue) => !prevValue);
+    } else if (buttonNumber === 7) {
+      setButton7Clicked((prevValue) => !prevValue);
+    }
   };
 
   return (
@@ -101,9 +121,7 @@ const LinkdinDiv = () => {
                 </div>
                 <div className={linkStyle.text_div}>
                   <Text className={linkStyle.heading_name}>{data.name}</Text>
-                  <Text className={linkStyle.hrs_heading}>
-                    {data.info}
-                  </Text>
+                  <Text className={linkStyle.hrs_heading}>{data.info}</Text>
                 </div>
               </div>
             </div>
@@ -120,9 +138,9 @@ const LinkdinDiv = () => {
                     <PopoverCloseButton />
                     <PopoverHeader>
                       <Box
-                        display="flex"
+                        display='flex'
                         gap={4}
-                        alignItems="center"
+                        alignItems='center'
                         onClick={onHidePostModalOpen} // Open the Hide Post modal
                       >
                         <BiHide style={{ fontSize: "30px" }} /> Hide Post
@@ -150,7 +168,7 @@ const LinkdinDiv = () => {
                           <ModalOverlay />
                           <ModalContent mt={36}>
                             <ModalHeader>
-                              <Text as="b" textAlign="center">
+                              <Text as='b' textAlign='center'>
                                 Report an Issue
                               </Text>
                             </ModalHeader>
@@ -159,17 +177,17 @@ const LinkdinDiv = () => {
                               <Box>
                                 <Stack>
                                   <Radio
-                                    size="md"
-                                    name="1"
-                                    colorScheme="blue"
+                                    size='md'
+                                    name='1'
+                                    colorScheme='blue'
                                     defaultChecked
                                   >
                                     It's spam
                                   </Radio>
-                                  <Radio size="md" name="1" colorScheme="green">
+                                  <Radio size='md' name='1' colorScheme='green'>
                                     False Information
                                   </Radio>
-                                  <Radio size="md" name="1">
+                                  <Radio size='md' name='1'>
                                     Not interested in this
                                   </Radio>
                                 </Stack>
@@ -179,18 +197,18 @@ const LinkdinDiv = () => {
                               <Box
                                 w={"70%"}
                                 m={"auto"}
-                                display="flex"
+                                display='flex'
                                 gap={8}
                                 mt={4}
                               >
                                 <Button
                                   className={linkStyle.cancelp}
-                                  border="1px solid silver"
-                                  colorScheme="white"
+                                  border='1px solid silver'
+                                  colorScheme='white'
                                   mr={3}
-                                  color="black"
-                                  fontWeight="bold"
-                                  fontSize="18px"
+                                  color='black'
+                                  fontWeight='bold'
+                                  fontSize='18px'
                                   p={5}
                                   onClick={onReportModalClose}
                                 >
@@ -198,13 +216,13 @@ const LinkdinDiv = () => {
                                 </Button>
                                 <Button
                                   className={linkStyle.unflp}
-                                  border="1px solid red"
-                                  colorScheme="white"
+                                  border='1px solid red'
+                                  colorScheme='white'
                                   mr={3}
-                                  color="red"
+                                  color='red'
                                   p={5}
-                                  fontWeight="bold"
-                                  fontSize="18px"
+                                  fontWeight='bold'
+                                  fontSize='18px'
                                 >
                                   Report
                                 </Button>
@@ -222,16 +240,16 @@ const LinkdinDiv = () => {
                           onClose={onHidePostModalClose}
                         >
                           <ModalOverlay />
-                          <ModalContent bg="black" mt={56}>
+                          <ModalContent bg='black' mt={56}>
                             <ModalCloseButton />
                             <ModalBody>
-                              <Box w={"95"} m={"auto"} display="flex" gap={6}>
+                              <Box w={"95"} m={"auto"} display='flex' gap={6}>
                                 <Box>
                                   <BiSolidHide style={{ fontSize: "30px" }} />
                                 </Box>
                                 <Box>
-                                  <Text color="gray.600">Post Hidden</Text>
-                                  <Text color="gray.600">
+                                  <Text color='gray.600'>Post Hidden</Text>
+                                  <Text color='gray.600'>
                                     You wont see this post on your timeline
                                   </Text>
                                 </Box>
@@ -244,7 +262,7 @@ const LinkdinDiv = () => {
                       <Box
                         display={"flex"}
                         gap={4}
-                        cursor="pointer"
+                        cursor='pointer'
                         alignItems={"center"}
                         onClick={onUnfollowModalOpen}
                       >
@@ -273,15 +291,15 @@ const LinkdinDiv = () => {
                         </Box>
                       </ModalBody>
                       <ModalFooter>
-                        <Box w={"70%"} m={"auto"} display="flex" gap={8}>
+                        <Box w={"70%"} m={"auto"} display='flex' gap={8}>
                           <Button
                             className={linkStyle.cancelp}
-                            border="1px solid silver"
-                            colorScheme="white"
+                            border='1px solid silver'
+                            colorScheme='white'
                             mr={3}
-                            color="black"
-                            fontWeight="bold"
-                            fontSize="18px"
+                            color='black'
+                            fontWeight='bold'
+                            fontSize='18px'
                             p={5}
                             onClick={onUnfollowModalClose}
                           >
@@ -289,13 +307,13 @@ const LinkdinDiv = () => {
                           </Button>
                           <Button
                             className={linkStyle.unflp}
-                            colorScheme="white"
+                            colorScheme='white'
                             mr={3}
-                            border="1px solid red"
-                            color="red"
+                            border='1px solid red'
+                            color='red'
                             p={5}
-                            fontWeight="bold"
-                            fontSize="18px"
+                            fontWeight='bold'
+                            fontSize='18px'
                           >
                             Unfollow
                           </Button>
@@ -317,7 +335,7 @@ const LinkdinDiv = () => {
           {/* heart commt div */}
           <div className={linkStyle.like_cokmmt_div}>
             <div className={linkStyle.heattt}>
-              <img src={heart} alt="" /> 2.4k
+              <img src={heart} alt='' /> 2.4k
             </div>
             <div className={linkStyle.comment}>
               <div className={linkStyle.cmmtthree}>3 comments</div>
@@ -327,19 +345,19 @@ const LinkdinDiv = () => {
 
           <div className={linkStyle.share_cokmmt_div}>
             <div className={linkStyle.like_div}>
-              <img src={whiteheart} alt="" /> <p>Like</p>
+              <img src={whiteheart} alt='' /> <p>Like</p>
             </div>
 
             <div className={linkStyle.commt_div}>
-              <img src={comment} alt="" /> <p>Comment</p>
+              <img src={comment} alt='' /> <p>Comment</p>
             </div>
 
             <div className={linkStyle.share_div}>
               <Popover>
-                <img src={share} alt="" />
+                <img src={share} alt='' />
 
                 <PopoverTrigger>
-                  <Text cursor="pointer">Share</Text>
+                  <Text cursor='pointer'>Share</Text>
                 </PopoverTrigger>
                 <Portal>
                   <PopoverContent w={72}>
@@ -387,139 +405,165 @@ const LinkdinDiv = () => {
                   {/* share modal */}
 
                   {
-                    <Modal 
+                    <Modal
                       isOpen={isShareModalOpen}
                       onClose={onShareModalClose}
                     >
                       <ModalOverlay />
-                      <ModalContent  className={linkStyle.modalContent_share}>
-                        <ModalHeader className={linkStyle.senddd}>Send to</ModalHeader>
-                        <ModalCloseButton />
+                      <ModalContent className={linkStyle.modalContent_share}>
+                        <ModalHeader className={linkStyle.senddd}>
+                          Send to
+                        </ModalHeader>
+                        <ModalCloseButton _focus={{ boxShadow: "none" }} />
                         <ModalBody
                           className={linkStyle.modal_share}
                           h={"auto"}
                           mb={10}
                         >
                           <Box>
-                            <InputGroup   className={linkStyle.input_chakra}>
+                            <InputGroup className={linkStyle.input_chakra}>
                               <InputLeftElement
-                                pointerEvents="none"
-                                children={<SearchIcon color="black" />}
+                                pointerEvents='none'
+                                children={<SearchIcon color='black' />}
                               />
                               <Input
                                 htmlSize={4}
-                                width="644px"
-                                placeholder="Search"
-                              
+                                width='644px'
+                                placeholder='Search'
                               />
                             </InputGroup>
-
-                            {/* box -1 */}
                           </Box>
-                          <Box
-                            w={"100%"}
-                            m={"auto"}
-                            mt={6}
-                            display="flex"
-                            alignItems="center"
-                           justifyContent="space-between"
-                            gap={54}
-                           borderTop={"none"}
-                           borderRight={"none"}
-                           borderLeft={"none"} 
-                           borderBottom={"1pz solid #D1D1D1;"}
-                          >   
-                            <Box className={linkStyle.box_share} >
-                              <Box
-                                w={"auto"}
-                                h={"100%"}
-                                display="flex"
-                                gap={4}
-                                alignItems="center"
-                              >
+                          {/* box -1 */}
+
+                          <Box w={"100%"} m={"auto"} h={32}>
+                            {" "}
+                            <Box
+                              w={"100%"}
+                              m={"auto"}
+                              display='flex'
+                              alignItems='center'
+                              justifyContent='space-between'
+                              gap={54}
+                              borderTop={"none"}
+                              borderRight={"none"}
+                              borderLeft={"none"}
+                              border={"1px solid #D1D1D1;"}
+                            >
+                              <Box className={linkStyle.box_share}>
                                 <Box
-                                  w="40px"
-                                  h="40px"
-                                  borderRadius="50%"
-                                  bg="blue"
+                                  w={"auto"}
+                                  h={"100%"}
+                                  display='flex'
+                                  gap={4}
+                                  alignItems='center'
                                 >
-                                  <Image
-                                    w={"100%"}
-                                    height={"100%"}
-                                    borderRadius={"50%"}
-                                    src={share1}
-                                    alt="Dan Abramov"
-                                  />
-                                </Box>
-                                <Box>
-                                  <Text fontSize="14px" fontWeight="700" lineHeight={"normal"} fontStyle={"normal"} >
-                                  Lorem Ipsum
-                                  </Text>
-                                  <Text fontSize="12px" color="#465D61" fontWeight={"400"} fontStyle={"normal"} lineHeight={"20px"} >
-                                    UI/UX Designer
-                                  </Text>
+                                  <Box
+                                    w='40px'
+                                    h='40px'
+                                    borderRadius='50%'
+                                    bg='blue'
+                                  >
+                                    <Image
+                                      w={"100%"}
+                                      height={"100%"}
+                                      borderRadius={"50%"}
+                                      src={share1}
+                                      alt='Dan Abramov'
+                                    />
+                                  </Box>
+                                  <Box>
+                                    <Text
+                                      fontSize='14px'
+                                      fontWeight='700'
+                                      lineHeight={"normal"}
+                                      fontStyle={"normal"}
+                                    >
+                                      Lorem Ipsum
+                                    </Text>
+                                    <Text
+                                      fontSize='12px'
+                                      color='#465D61'
+                                      fontWeight={"400"}
+                                      fontStyle={"normal"}
+                                      lineHeight={"20px"}
+                                    >
+                                      UI/UX Designer
+                                    </Text>
+                                  </Box>
                                 </Box>
                               </Box>
-                            </Box>
-                            <Box>
-                              <Button
-                                className={`${linkStyle["teal-button"]} ${
-                                  isButtonClicked === true
-                                    ? linkStyle["black-button"]
-                                    : ""
-                                }`}
-                                // mr={3}
-                                w={32}
-                                borderRadius="50"
-                                h={10}
-                                color={"white"}
-                                onClick={handleButtonClick}
-                                style={{
-                                  backgroundColor:
-                                    isButtonClicked === true ? "black" : "teal",
-                                }}
-                              >
-                                {isButtonClicked ? "Sent" : "Send"}
-                              </Button>
+                              <Box>
+                                <Button
+                                  className={`${linkStyle["teal-button"]} ${
+                                    button1Clicked
+                                      ? linkStyle["black-button"]
+                                      : ""
+                                  }`}
+                                  // mr={3}
+                                  w={32}
+                                  borderRadius='50'
+                                  h={10}
+                                  color={"white"}
+                                  onClick={() => handleButtonClick(1)}
+                                  style={{
+                                    backgroundColor: button1Clicked
+                                      ? "black"
+                                      : "teal",
+                                  }}
+                                >
+                                  {button1Clicked ? "Sent" : "Send"}
+                                </Button>
+                              </Box>
                             </Box>
                           </Box>
-                           {/* <hr ></hr> */}
-                         {/* box-2 */}
+
+                          {/* box-2 */}
                           <Box
                             w={"100%"}
                             m={"auto"}
                             mt={4}
-                            display="flex"
-                            alignItems="center"
-                            justifyContent="space-between"
+                            display='flex'
+                            alignItems='center'
+                            justifyContent='space-between'
                           >
                             <Box>
                               <Box
                                 w={"auto"}
                                 h={"100%"}
-                                display="flex"
+                                display='flex'
                                 gap={4}
-                                alignItems="center"
+                                alignItems='center'
                               >
                                 <Box
-                                  w="40px"
-                                  h="40px"
-                                  borderRadius="50%"
-                                  bg="blue"
+                                  w='40px'
+                                  h='40px'
+                                  borderRadius='50%'
+                                  bg='blue'
                                 >
                                   <Image
                                     w={"100%"}
                                     height={"100%"}
                                     borderRadius={"50%"}
-                                    src="https://bit.ly/dan-abramov"
-                                    alt="Dan Abramov"
+                                    src='https://bit.ly/dan-abramov'
+                                    alt='Dan Abramov'
                                   />
                                 </Box>
                                 <Box>
-                                <Text fontSize="14px" fontWeight="700" lineHeight={"normal"} fontStyle={"normal"} >
-                                  Lorem Ipsum
+                                  <Text
+                                    fontSize='14px'
+                                    fontWeight='700'
+                                    lineHeight={"normal"}
+                                    fontStyle={"normal"}
+                                  >
+                                    Lorem Ipsum
                                   </Text>
-                                  <Text fontSize="12px" color="#465D61" fontWeight={"400"} fontStyle={"normal"} lineHeight={"20px"} >
+                                  <Text
+                                    fontSize='12px'
+                                    color='#465D61'
+                                    fontWeight={"400"}
+                                    fontStyle={"normal"}
+                                    lineHeight={"20px"}
+                                  >
                                     UI/UX Designer
                                   </Text>
                                 </Box>
@@ -528,63 +572,74 @@ const LinkdinDiv = () => {
                             <Box>
                               <Button
                                 className={`${linkStyle["teal-button"]} ${
-                                  isButtonClicked === true
+                                  button2Clicked === true
                                     ? linkStyle["black-button"]
                                     : ""
                                 }`}
                                 // mr={3}
                                 w={32}
-                                borderRadius="50"
+                                borderRadius='50'
                                 h={10}
                                 color={"white"}
-                                onClick={handleButtonClick}
+                                onClick={() => handleButtonClick(2)}
                                 style={{
-                                  backgroundColor:
-                                    isButtonClicked === true ? "black" : "teal",
+                                  backgroundColor: button2Clicked
+                                    ? "black"
+                                    : "teal",
                                 }}
-                                
                               >
-                                {isButtonClicked ? "Sent" : "Send"}
+                                {button2Clicked ? "Sent" : "Send"}
                               </Button>
                             </Box>
                           </Box>
 
-                           {/* box-3 */}
+                          {/* box-3 */}
                           <Box
                             w={"100%"}
                             m={"auto"}
                             mt={4}
-                            display="flex"
-                            alignItems="center"
-                            justifyContent="space-between"
+                            display='flex'
+                            alignItems='center'
+                            justifyContent='space-between'
                           >
                             <Box>
                               <Box
                                 w={"auto"}
                                 h={"100%"}
-                                display="flex"
+                                display='flex'
                                 gap={4}
-                                alignItems="center"
+                                alignItems='center'
                               >
                                 <Box
-                                  w="40px"
-                                  h="40px"
-                                  borderRadius="50%"
-                                  bg="blue"
+                                  w='40px'
+                                  h='40px'
+                                  borderRadius='50%'
+                                  bg='blue'
                                 >
                                   <Image
                                     w={"100%"}
                                     height={"100%"}
                                     borderRadius={"50%"}
-                                    src="https://bit.ly/dan-abramov"
-                                    alt="Dan Abramov"
+                                    src='https://bit.ly/dan-abramov'
+                                    alt='Dan Abramov'
                                   />
                                 </Box>
                                 <Box>
-                                <Text fontSize="14px" fontWeight="700" lineHeight={"normal"} fontStyle={"normal"} >
-                                  Lorem Ipsum
+                                  <Text
+                                    fontSize='14px'
+                                    fontWeight='700'
+                                    lineHeight={"normal"}
+                                    fontStyle={"normal"}
+                                  >
+                                    Lorem Ipsum
                                   </Text>
-                                  <Text fontSize="12px" color="#465D61" fontWeight={"400"} fontStyle={"normal"} lineHeight={"20px"} >
+                                  <Text
+                                    fontSize='12px'
+                                    color='#465D61'
+                                    fontWeight={"400"}
+                                    fontStyle={"normal"}
+                                    lineHeight={"20px"}
+                                  >
                                     UI/UX Designer
                                   </Text>
                                 </Box>
@@ -593,63 +648,73 @@ const LinkdinDiv = () => {
                             <Box>
                               <Button
                                 className={`${linkStyle["teal-button"]} ${
-                                  isButtonClicked === true
+                                  button3Clicked
                                     ? linkStyle["black-button"]
                                     : ""
                                 }`}
                                 // mr={3}
                                 w={32}
-                                borderRadius="50"
+                                borderRadius='50'
                                 h={10}
                                 color={"white"}
-                                onClick={handleButtonClick}
+                                onClick={() => handleButtonClick(3)}
                                 style={{
                                   backgroundColor:
-                                    isButtonClicked === true ? "black" : "teal",
+                                    button3Clicked === true ? "black" : "teal",
                                 }}
                               >
-                                {isButtonClicked ? "Sent" : "Send"}
+                                {button3Clicked ? "Sent" : "Send"}
                               </Button>
                             </Box>
                           </Box>
 
-
-                           {/* box-4 */}
+                          {/* box-4 */}
                           <Box
                             w={"100%"}
                             m={"auto"}
                             mt={4}
-                            display="flex"
-                            alignItems="center"
-                            justifyContent="space-between"
+                            display='flex'
+                            alignItems='center'
+                            justifyContent='space-between'
                           >
                             <Box>
                               <Box
                                 w={"auto"}
                                 h={"100%"}
-                                display="flex"
+                                display='flex'
                                 gap={4}
-                                alignItems="center"
+                                alignItems='center'
                               >
                                 <Box
-                                  w="40px"
-                                  h="40px"
-                                  borderRadius="50%"
-                                  bg="blue"
+                                  w='40px'
+                                  h='40px'
+                                  borderRadius='50%'
+                                  bg='blue'
                                 >
                                   <Image
                                     w={"100%"}
                                     height={"100%"}
                                     borderRadius={"50%"}
-                                    src="https://bit.ly/dan-abramov"
-                                    alt="Dan Abramov"
+                                    src='https://bit.ly/dan-abramov'
+                                    alt='Dan Abramov'
                                   />
                                 </Box>
                                 <Box>
-                                <Text fontSize="14px" fontWeight="700" lineHeight={"normal"} fontStyle={"normal"} >
-                                  Lorem Ipsum
+                                  <Text
+                                    fontSize='14px'
+                                    fontWeight='700'
+                                    lineHeight={"normal"}
+                                    fontStyle={"normal"}
+                                  >
+                                    Lorem Ipsum
                                   </Text>
-                                  <Text fontSize="12px" color="#465D61" fontWeight={"400"} fontStyle={"normal"} lineHeight={"20px"} >
+                                  <Text
+                                    fontSize='12px'
+                                    color='#465D61'
+                                    fontWeight={"400"}
+                                    fontStyle={"normal"}
+                                    lineHeight={"20px"}
+                                  >
                                     UI/UX Designer
                                   </Text>
                                 </Box>
@@ -658,209 +723,245 @@ const LinkdinDiv = () => {
                             <Box>
                               <Button
                                 className={`${linkStyle["teal-button"]} ${
-                                  isButtonClicked === true
+                                  button4Clicked === true
                                     ? linkStyle["black-button"]
                                     : ""
                                 }`}
                                 // mr={3}
                                 w={32}
-                                borderRadius="50"
+                                borderRadius='50'
                                 h={10}
                                 color={"white"}
-                                onClick={handleButtonClick}
+                                onClick={() => handleButtonClick(4)}
                                 style={{
-                                  backgroundColor:
-                                    isButtonClicked === true ? "black" : "teal",
+                                  backgroundColor: button4Clicked
+                                    ? "black"
+                                    : "teal",
                                 }}
                               >
-                                {isButtonClicked ? "Sent" : "Send"}
+                                {button4Clicked ? "Sent" : "Send"}
                               </Button>
                             </Box>
                           </Box>
 
+                          {/* box-5 */}
                           <Box
                             w={"100%"}
                             m={"auto"}
                             mt={4}
-                            display="flex"
-                            alignItems="center"
-                            justifyContent="space-between"
-                          >
-                            <Box>
-                              <Box
-                                w={"auto"}
-                                h={"100%"}
-                                display="flex"
-                                gap={4}
-                                alignItems="center"
-                              >
-                                <Box
-                                  w="40px"
-                                  h="40px"
-                                  borderRadius="50%"
-                                  bg="blue"
-                                >
-                                  <Image
-                                    w={"100%"}
-                                    height={"100%"}
-                                    borderRadius={"50%"}
-                                    src="https://bit.ly/dan-abramov"
-                                    alt="Dan Abramov"
-                                  />
-                                </Box>
-                                <Box>
-                                  <Text fontSize="14px" fontWeight="bold">
-                                    Hamza Anjum
-                                  </Text>
-                                  <Text fontSize="12px" color="gray">
-                                    UI/UX Designer
-                                  </Text>
-                                </Box>
-                              </Box>
-                            </Box>
-                            <Box>
-                              <Button
-                                className={`${linkStyle["teal-button"]} ${
-                                  isButtonClicked === true
-                                    ? linkStyle["black-button"]
-                                    : ""
-                                }`}
-                                // mr={3}
-                                w={32}
-                                borderRadius="50"
-                                h={10}
-                                color={"white"}
-                                onClick={handleButtonClick}
-                                style={{
-                                  backgroundColor:
-                                    isButtonClicked === true ? "black" : "teal",
-                                }}
-                              >
-                                {isButtonClicked ? "Sent" : "Send"}
-                              </Button>
-                            </Box>
-                          </Box>
-
-                     {/* box-5 */}
-                          <Box
-                            w={"100%"}
-                            m={"auto"}
-                            mt={4}
-                            display="flex"
-                            alignItems="center"
-                            justifyContent="space-between"
+                            display='flex'
+                            alignItems='center'
+                            justifyContent='space-between'
                           >
                             <Box
                               w={"auto"}
                               h={"100%"}
-                              display="flex"
+                              display='flex'
                               gap={4}
-                              alignItems="center"
+                              alignItems='center'
                             >
                               <Box
-                                w="40px"
-                                h="40px"
-                                borderRadius="50%"
-                                bg="blue"
+                                w='40px'
+                                h='40px'
+                                borderRadius='50%'
+                                bg='blue'
                               >
                                 <Image
                                   w={"100%"}
                                   height={"100%"}
                                   borderRadius={"50%"}
-                                  src="https://bit.ly/dan-abramov"
-                                  alt="Dan Abramov"
+                                  src='https://bit.ly/dan-abramov'
+                                  alt='Dan Abramov'
                                 />
                               </Box>
                               <Box>
-                              <Text fontSize="14px" fontWeight="700" lineHeight={"normal"} fontStyle={"normal"} >
+                                <Text
+                                  fontSize='14px'
+                                  fontWeight='700'
+                                  lineHeight={"normal"}
+                                  fontStyle={"normal"}
+                                >
                                   Lorem Ipsum
-                                  </Text>
-                                  <Text fontSize="12px" color="#465D61" fontWeight={"400"} fontStyle={"normal"} lineHeight={"20px"} >
-                                    UI/UX Designer
-                                  </Text>
+                                </Text>
+                                <Text
+                                  fontSize='12px'
+                                  color='#465D61'
+                                  fontWeight={"400"}
+                                  fontStyle={"normal"}
+                                  lineHeight={"20px"}
+                                >
+                                  UI/UX Designer
+                                </Text>
                               </Box>
                             </Box>
                             <Box>
                               <Button
                                 className={`${linkStyle["teal-button"]} ${
-                                  isButtonClicked === true
+                                  button5Clicked
                                     ? linkStyle["black-button"]
                                     : ""
                                 }`}
                                 // mr={3}
                                 w={32}
-                                borderRadius="50"
+                                borderRadius='50'
                                 h={10}
                                 color={"white"}
-                                onClick={handleButtonClick}
+                                onClick={() => handleButtonClick(5)}
                                 style={{
-                                  backgroundColor:
-                                    isButtonClicked === true ? "black" : "teal",
+                                  backgroundColor: button5Clicked
+                                    ? "black"
+                                    : "teal",
                                 }}
                               >
-                                {isButtonClicked ? "Sent" : "Send"}
+                                {button5Clicked ? "Sent" : "Send"}
                               </Button>
                             </Box>
                           </Box>
 
-                        {/* box-6 */}
+                          {/* box-6 */}
                           <Box
                             w={"100%"}
                             m={"auto"}
                             mt={4}
-                            display="flex"
-                            alignItems="center"
-                            justifyContent="space-between"
+                            display='flex'
+                            alignItems='center'
+                            justifyContent='space-between'
                           >
                             <Box
                               w={"auto"}
                               h={"100%"}
-                              display="flex"
+                              display='flex'
                               gap={4}
-                              alignItems="center"
+                              alignItems='center'
                             >
                               <Box
-                                w="40px"
-                                h="40px"
-                                borderRadius="50%"
-                                bg="blue"
+                                w='40px'
+                                h='40px'
+                                borderRadius='50%'
+                                bg='blue'
                               >
                                 <Image
                                   w={"100%"}
                                   height={"100%"}
                                   borderRadius={"50%"}
-                                  src="https://bit.ly/dan-abramov"
-                                  alt="Dan Abramov"
+                                  src='https://bit.ly/dan-abramov'
+                                  alt='Dan Abramov'
                                 />
                               </Box>
                               <Box>
-                              <Text fontSize="14px" fontWeight="700" lineHeight={"normal"} fontStyle={"normal"} >
+                                <Text
+                                  fontSize='14px'
+                                  fontWeight='700'
+                                  lineHeight={"normal"}
+                                  fontStyle={"normal"}
+                                >
                                   Lorem Ipsum
-                                  </Text>
-                                  <Text fontSize="12px" color="#465D61" fontWeight={"400"} fontStyle={"normal"} lineHeight={"20px"} >
-                                    UI/UX Designer
-                                  </Text>
+                                </Text>
+                                <Text
+                                  fontSize='12px'
+                                  color='#465D61'
+                                  fontWeight={"400"}
+                                  fontStyle={"normal"}
+                                  lineHeight={"20px"}
+                                >
+                                  UI/UX Designer
+                                </Text>
                               </Box>
                             </Box>
                             <Box>
                               <Button
                                 className={`${linkStyle["teal-button"]} ${
-                                  isButtonClicked === true
+                                  button6Clicked
                                     ? linkStyle["black-button"]
                                     : ""
                                 }`}
                                 // mr={3}
                                 w={32}
-                                borderRadius="50"
+                                borderRadius='50'
                                 h={10}
                                 color={"white"}
-                                onClick={handleButtonClick}
+                                onClick={() => handleButtonClick(6)}
                                 style={{
-                                  backgroundColor:
-                                    isButtonClicked === true ? "black" : "teal",
+                                  backgroundColor: button6Clicked
+                                    ? "black"
+                                    : "teal",
                                 }}
                               >
-                                {isButtonClicked ? "Sent" : "Send"}
+                                {button6Clicked ? "Sent" : "Send"}
+                              </Button>
+                            </Box>
+                          </Box>
+
+                          {/* box-7 */}
+                          <Box
+                            w={"100%"}
+                            m={"auto"}
+                            mt={4}
+                            display='flex'
+                            alignItems='center'
+                            justifyContent='space-between'
+                          >
+                            <Box
+                              w={"auto"}
+                              h={"100%"}
+                              display='flex'
+                              gap={4}
+                              alignItems='center'
+                            >
+                              <Box
+                                w='40px'
+                                h='40px'
+                                borderRadius='50%'
+                                bg='blue'
+                              >
+                                <Image
+                                  w={"100%"}
+                                  height={"100%"}
+                                  borderRadius={"50%"}
+                                  src='https://bit.ly/dan-abramov'
+                                  alt='Dan Abramov'
+                                />
+                              </Box>
+                              <Box>
+                                <Text
+                                  fontSize='14px'
+                                  fontWeight='700'
+                                  lineHeight={"normal"}
+                                  fontStyle={"normal"}
+                                >
+                                  Lorem Ipsum
+                                </Text>
+                                <Text
+                                  fontSize='12px'
+                                  color='#465D61'
+                                  fontWeight={"400"}
+                                  fontStyle={"normal"}
+                                  lineHeight={"20px"}
+                                >
+                                  UI/UX Designer
+                                </Text>
+                              </Box>
+                            </Box>
+                            <Box>
+                              <Button
+                                className={`${linkStyle["teal-button"]} ${
+                                  button7Clicked
+                                    ? linkStyle["black-button"]
+                                    : ""
+                                }`}
+                                // mr={3}
+                                w={32}
+                                borderRadius='50'
+                                h={10}
+                                color={"white"}
+                                onClick={() => handleButtonClick(7)}
+                                style={{
+                                  backgroundColor: button7Clicked
+                                    ? "black"
+                                    : "teal",
+                                }}
+                              >
+                                {button7Clicked ? "Sent" : "Send"}
                               </Button>
                             </Box>
                           </Box>
@@ -875,16 +976,15 @@ const LinkdinDiv = () => {
 
           <div className={linkStyle.post_last_div}>
             <div className={linkStyle.user_icon_div}>
-              <img src={user} alt="" />
+              <img src={user} alt='' />
             </div>
 
             <div className={linkStyle.div_comment_section}>
-              <input type="text" placeholder="write a comment"/>
-                
+              <input type='text' placeholder='write a comment' />
             </div>
 
             <div className={linkStyle.div_send_section}>
-              <img src={send} alt="" />
+              <img src={send} alt='' />
             </div>
           </div>
         </div>

@@ -124,7 +124,7 @@ export const Message = () => {
 
 
       {/* working */}
-      <div>
+      <div className={mssgSty.postion_div}>
         {personal && (
           <div className={mssgSty.parnt_msg_div}>
             <div

@@ -2,7 +2,7 @@
 .menuIcondiv {
   display: flex;
   justify-content: space-between;
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
   padding: 10px 20px;
   width: 292px;
   /* width: 20%; */
@@ -11,6 +11,9 @@
   height:40px;
 background: var(--ui-design-primary, #00808B);
  
+}
+.postion_div{
+  position : relative;
 }
 
 .scrollableDiv {
@@ -61,6 +64,9 @@ background: var(--ui-design-primary, #00808B);
   border-radius: 15px 15px 0px 0px;
 background: var(--ui-design-white, #FFF);
 box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.05);
+position: fixed;
+bottom: 0;
+border:2px solid red;
 }
 /* worlds icons */
 .worldicon {

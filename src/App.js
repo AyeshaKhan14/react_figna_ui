@@ -4,7 +4,7 @@ import { Home } from './Page/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div style={{border:"2px solid purple"}} className="App">
       <Home/>
     </div>
   );
