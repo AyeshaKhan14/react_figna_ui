@@ -1,0 +1,126 @@
+/* Navigation Container */
+.nav_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: var(--primary-white);
+	width: 100%;
+	height: 80px;
+}
+
+/* Search Box */
+.search_box {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	border: 1px solid #ccc;
+	border-radius: 28px;
+	padding: 5px 8px;
+	background: var(--gray);
+}
+
+/* Search Icon */
+.search_icon {
+	color: var(--black);
+	opacity: 0.8;
+}
+
+/* Search Input */
+.search_input {
+	width: 300px;
+	outline: none;
+	background: var(--gray);
+	color: var(--black);
+}
+.search_input::placeholder {
+	color: var(--black);
+	opacity: 0.8;
+}
+
+/* Notification Container */
+.notification_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+}
+
+/* Notification Icon */
+.notification_icon {
+	font-size: 32px;
+	color: var(--primary-theme);
+}
+
+/* Line Divider */
+.line_divider {
+	border: 1px solid var(--gray);
+	height: 3rem;
+}
+
+/* User Avatar */
+.user_avatar {
+	border-radius: 50%;
+}
+
+/* User Avatar Image */
+.user_avatar_img {
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+}
+
+/* Breakpoints */
+/* xs: Extra Small */
+@media (max-width: 575px) {
+	.emp {
+		display: none;
+	}
+
+	.search_box {
+		padding: 5px 5px;
+	}
+}
+
+/* sm: Small */
+@media (min-width: 576px) and (max-width: 767px) {
+	.emp {
+		display: none;
+	}
+	.search_box {
+		padding: 5px 10px;
+	}
+}
+
+/* md: Medium */
+@media (min-width: 768px) and (max-width: 991px) {
+	.nav_container {
+		height: 60px;
+	}
+	.search_box {
+		padding: 8px 12px;
+	}
+	.search_input {
+		width: 100%;
+	}
+}
+
+/* lg: Large */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.nav_container {
+		height: 70px;
+	}
+
+	.search_box {
+		padding: 10px 15px;
+	}
+}
+
+/* xl: Extra Large */
+@media (min-width: 1200px) and (max-width: 1399px) {
+	/* Add custom styles for this breakpoint if needed */
+}
+
+/* xxl: Extra Extra Large */
+@media (min-width: 1400px) {
+	/* Add custom styles for this breakpoint if needed */
+}
