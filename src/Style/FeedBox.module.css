@@ -3,7 +3,7 @@
   margin: auto;
   display: flex;
   justify-content: space-around;
-  /* border:2px solid yellow; */
+  border: 2px solid yellow;
   margin-top: 2%;
   border-radius: 5px;
   gap: 10px;
@@ -12,7 +12,7 @@
 }
 
 .feed_cont_div2 {
-  /* border:4px solid teal; */
+  border: 4px solid teal;
   display: flex;
   /* border:3px solid rgb(255, 153, 0); */
   height: 1024.061px;
@@ -20,8 +20,8 @@
 }
 
 .fedd_cont_section1 {
-  /* border:1px solid red; */
-  width: 21%;
+  border: 1px solid red;
+  /* width: 21%; */
 }
 /* user progile */
 
@@ -128,21 +128,20 @@
 }
 
 .ipss_para {
-  color: var(--ui-design-text-primary-text, #0D1B1D);
-font-family: gilroy light;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 20px;
-
+  color: var(--ui-design-text-primary-text, #0d1b1d);
+  font-family: gilroy light;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
 }
 .lorewu_div_span {
-  color: var(--ui-design-text-secondary-text, #465D61);
+  color: var(--ui-design-text-secondary-text, #465d61);
   font-family: gilroy light;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
-  line-height: 16px; 
+  line-height: 16px;
 }
 
 .today_last_div {
@@ -169,8 +168,7 @@ line-height: 20px;
 
 .fedd_cont_section3 {
   width: 292px;
-  /* border: 2px solid brown; */
- 
+  border: 2px solid brown;
 }
 
 @font-face {
@@ -213,7 +211,7 @@ line-height: 20px;
   }
   .lorewu_div {
     /* border:2px solid black; */
-    width:180px;
+    width: 180px;
   }
   .lorewu_div > p {
     color: var(--ui-design-text-primary-text, #0d1b1d);
@@ -222,7 +220,6 @@ line-height: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
-    
   }
   .lorewu_div_span {
     color: var(--ui-design-text-secondary-text, #465d61);
@@ -271,7 +268,7 @@ line-height: 20px;
   }
   .lorewu_div {
     /* border:2px solid black; */
-    width:180px;
+    width: 180px;
   }
   .lorewu_div > p {
     color: var(--ui-design-text-primary-text, #0d1b1d);
@@ -280,7 +277,6 @@ line-height: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
-    
   }
   .lorewu_div_span {
     color: var(--ui-design-text-secondary-text, #465d61);
